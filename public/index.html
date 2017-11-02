@@ -1,28 +1,156 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
 
-    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyA90DhkqcJ7KafHnhJhuDINwLHTiy1VHh0",
-        authDomain: "finestwebview.firebaseapp.com",
-        databaseURL: "https://finestwebview.firebaseio.com",
-        projectId: "finestwebview",
-        storageBucket: "finestwebview.appspot.com",
-        messagingSenderId: "858518193081"
-      };
-      firebase.initializeApp(config);
-    </script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FinestWebView</title>
+  <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyA90DhkqcJ7KafHnhJhuDINwLHTiy1VHh0",
+      authDomain: "finestwebview.firebaseapp.com",
+      databaseURL: "https://finestwebview.firebaseio.com",
+      projectId: "finestwebview",
+      storageBucket: "finestwebview.appspot.com",
+      messagingSenderId: "858518193081"
+    };
+    firebase.initializeApp(config);
+  </script>
 
-    <style media="screen">
-    </style>
-  </head>
-  <body>
-    <h1>Hello World</h1>
-  </body>
+  <style media="screen">
+
+  </style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Source+Sans+Pro:400,600|Source+Serif+Pro" rel="stylesheet">
+  <style>
+    h1 {
+      color: #2D2F30;
+      display: block;
+      font: 24px 'Source Serif Pro', serif;
+    }
+
+    h2 {
+      color: #2D2F30;
+      font: 18px 'Source Sans Pro', sans-serif;
+    }
+
+    h3 {
+      color: #2D2F30;
+      display: block;
+      font: 14px 'Source Sans Pro', sans-serif;
+      font-weight: 600;
+    }
+
+    h4 {
+      color: #7E8491;
+      font: 14px/24px 'Source Sans Pro', sans-serif;
+    }
+
+    h5 {
+      color: #7E8491;
+      font: 14px/24px 'Inconsolata', monospace;
+    }
+
+    a {
+      border-bottom: 2px solid #2D2F30 !important;
+      color: #7E8491;
+      text-decoration: none;
+    }
+
+    a:active {
+      background-color: yellow;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    .nav-item {
+      margin-left: 30px;
+    }
+
+    .highlight {
+      background-color: #E9ECF1;
+      border-radius: 2px;
+      padding: 20px;
+    }
+
+    .vertical-nav {
+      display: block;
+    }
+
+    #section1 {
+      display: block;
+    }
+
+    #section2 {
+      display: block;
+    }
+
+    #section3 {
+      display: block;
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav>
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <h2>Documentation</h2>
+      </li>
+      <li class="nav-item">
+        <h2>Download</h2>
+      </li>
+      <li class="nav-item">
+        <h2>Github</h2>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <nav class="col-sm-3" id="myScrollspy">
+        <ul class="nav vertical-nav" data-spy="affix" data-offset-top="205">
+          <h4>
+          <li><a href="#section1">Getting Started</a></li>
+          <li><a href="#section2">Customization</a></li>
+          <li><a href="#section3">More customizations</a></li>
+          <li><a href="#section4">Designer</a></li>
+          <li><a href="#section5">License</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#section41">Section 4-1</a></li>
+              <li><a href="#section42">Section 4-2</a></li>
+            </h4>
+        </ul>
+        </li>
+        </ul>
+      </nav>
+      <div class="col-sm-9">
+        <div id="section1">
+          <h1>Getting Started</h1>
+        </div>
+        <div id="section2">
+          <h3>Demo Video</h3>
+          <h4><a href=#>View</a></h4>
+        </div>
+        <div id="section3">
+          <h3>Gradle Dependency (jcenter)</h3>
+          <h4>Easily reference the library in your Android projects using this dependency in your module's build.gradle file.</h4>
+          <div class="highlight">
+            <pre>
+  <h5>dependencies {
+    compile 'com.thefinestartist:finestwebview:1.2.7'
+}</h5></pre></div>
+        </div>
+      </div>
+    </div>
+</body>
+
 </html>
