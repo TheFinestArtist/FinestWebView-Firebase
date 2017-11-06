@@ -19,12 +19,15 @@
     firebase.initializeApp(config);
   </script>
 
-  <style media="screen">
-
-  </style>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Source+Sans+Pro:400,600|Source+Serif+Pro" rel="stylesheet">
   <style>
+    body {
+      position: relative;
+    }
+
     h1 {
       color: #2D2F30;
       display: block;
@@ -54,7 +57,7 @@
     }
 
     a {
-      border-bottom: 2px solid #2D2F30 !important;
+      /*border-bottom: 2px solid #2D2F30 !important;*/
       color: #7E8491;
       text-decoration: none;
     }
@@ -65,6 +68,32 @@
     }
 
     a:hover {
+      color: #E9ECF1;
+      text-decoration: none;
+    }
+
+    .affix {
+      top: 20px;
+      z-index: 9999 !important;
+    }
+
+    nav {
+      height: 42px;
+      color: #2D2F30;
+      font: 14px/24px 'Source Sans Pro', sans-serif;
+      padding: 0px;
+    }
+
+
+    .nav>li>a {
+      border-radius: 0px;
+      padding: 0px;
+    }
+
+    .nav-pills>li.active>a {
+      background-color: yellow;
+      font-weight: 600;
+      color: #2D2F30;
       text-decoration: none;
     }
 
@@ -78,79 +107,101 @@
       padding: 20px;
     }
 
-    .vertical-nav {
-      display: block;
+    .intro {
+      height: 200px;
+      text-align: center;
+    }
+
+    .app-title {
+      font: 18px 'Source Sans Pro', sans-serif;
+      color: #2D2F30;
     }
 
     #section1 {
       display: block;
+      height: 500px;
     }
 
     #section2 {
       display: block;
+      height: 500px;
     }
 
     #section3 {
       display: block;
+      height: 500px;
+    }
+
+    #section4 {
+      display: block;
+      height: 500px;
+    }
+
+    #section5 {
+      display: block;
+      height: 500px;
     }
   </style>
-
 </head>
 
-<body>
-  <nav>
-    <ul class="nav justify-content-end">
-      <li class="nav-item">
-        <h2>Documentation</h2>
-      </li>
-      <li class="nav-item">
-        <h2>Download</h2>
-      </li>
-      <li class="nav-item">
-        <h2>Github</h2>
-      </li>
-    </ul>
-  </nav>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="15">
+  <div class="intro">
+    <p class="app-title">FinestWebView</p>
+    <h1>Beautiful and customisable Android Activity<br>that shows web pages within an app</h1>
+  </div><br>
 
   <div class="container">
     <div class="row">
       <nav class="col-sm-3" id="myScrollspy">
-        <ul class="nav vertical-nav" data-spy="affix" data-offset-top="205">
-          <h4>
+        <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
           <li><a href="#section1">Getting Started</a></li>
           <li><a href="#section2">Customization</a></li>
           <li><a href="#section3">More customizations</a></li>
           <li><a href="#section4">Designer</a></li>
           <li><a href="#section5">License</a></li>
-          <li class="dropdown">
+          <!-- <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="#section41">Section 4-1</a></li>
-              <li><a href="#section42">Section 4-2</a></li>
-            </h4>
-        </ul>
-        </li>
+              <li><a href="#section42">Section 4-2</a></li> -->
+            </ul>
+          </li>
         </ul>
       </nav>
       <div class="col-sm-9">
         <div id="section1">
           <h1>Getting Started</h1>
-        </div>
-        <div id="section2">
+          <h4>Random scrollable text here</h4>
           <h3>Demo Video</h3>
           <h4><a href=#>View</a></h4>
-        </div>
-        <div id="section3">
           <h3>Gradle Dependency (jcenter)</h3>
           <h4>Easily reference the library in your Android projects using this dependency in your module's build.gradle file.</h4>
           <div class="highlight">
-            <pre>
-  <h5>dependencies {
-    compile 'com.thefinestartist:finestwebview:1.2.7'
-}</h5></pre></div>
+            <h5>dependencies {
+  compile 'com.thefinestartist:finestwebview:1.2.7'
+}</h5></div>
+        </div>
+        <div id="section2">
+          <h1>Customization</h1>
+          <h4>Random scrollable text here</h4>
+        </div>
+        <div id="section3">
+          <h1>More Customizations</h1>
+          <h4>Random scrollable text here</h4>
+        </div>
+        <div id="section4">
+          <h1>Designer</h1>
+          <h4>Random scrollable text here</h4>
+        </div>
+        <div id="section5">
+          <h1>License</h1>
+          <h4>Random scrollable text here</h4>
         </div>
       </div>
     </div>
+  </div>
+
+
 </body>
 
 </html>
