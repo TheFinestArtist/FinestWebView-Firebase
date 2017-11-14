@@ -87,6 +87,7 @@
 
     .nav>li>a {
       border-radius: 0px;
+      display: initial;
       padding: 0px;
     }
 
@@ -94,6 +95,18 @@
       background-color: yellow;
       font-weight: 600;
       color: #2D2F30;
+      text-decoration: none;
+    }
+
+    .nav-pills>li:hover>a {
+      background-color: #E9ECF1;
+      color: #7E8491;
+      text-decoration: none;
+    }
+
+    .nav-pills>li.active:hover>a {
+      background-color: #E9ECF1;
+      color: #7E8491;
       text-decoration: none;
     }
 
@@ -141,6 +154,13 @@
       display: block;
       height: 500px;
     }
+
+    @media screen and (max-width: 810px) {
+  #section1, #section2, #section3, #section4, #section5  {
+      margin-left: 150px;
+
+    }
+}
   </style>
 </head>
 
