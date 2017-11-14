@@ -143,7 +143,15 @@
     }
 
     .right-col {
-      float: left;
+      margin-left: 0px;
+    }
+
+    .feature-left {
+            text-align: right;
+    }
+
+    .feature-right {
+            text-align: left;
     }
 
     #devicemockup {
@@ -194,13 +202,21 @@
     <span class="app-description">Beautiful and customisable Android Activity<br>that shows web pages within an app</span>
     <div class="row">
       <div class="col-sm-4" "left-col">
-        <span><h4>See this</h4></span>
+        <span class="feature-left"><h4>Builder pattern</h4></span>
+        <span class="feature-left"><h4>Webview listeners</h4></span>
+        <span class="feature-left"><h4>Support collapsing toolbar &<br> contextual actionbar</h4></span>
+        <span class="feature-left"><h4>Device rotation</h4></span>
+        <span class="feature-left"><h4>Custom typeface & translation</h4></span>
       </div>
       <div class="col-sm-4">
         <img id="devicemockup" src="/assets/images/googlepixel_white.png" />
       </div>
       <div class="col-sm-4" "right-col">
-        <span><h4>See this</h4></span>
+        <span class="feature-right"><h4>Material design &<br> Pre-made icons</h4></span>
+        <span class="feature-right"><h4>Custom themes & Custom<br> transition animations</h4></span>
+        <span class="feature-right"><h4>SwipeRefreshLayout &<br> Progressbar</h4></span>
+        <span class="feature-right"><h4>Gradient divider</h4></span>
+        <span class="feature-right"><h4>Supports Right to Left</h4></span>
       </div>
     </div>
   </div><br>
@@ -208,7 +224,7 @@
   <div class="container">
     <div class="row">
       <nav class="col-sm-3" id="myScrollspy">
-        <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
+        <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="1000">
           <li><a href="#section1">Getting Started</a></li>
           <li><a href="#section2">Customization</a></li>
           <li><a href="#section3">More customizations</a></li>
