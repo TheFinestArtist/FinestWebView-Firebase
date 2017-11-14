@@ -121,13 +121,34 @@
     }
 
     .intro {
-      height: 200px;
+      height: 1000px;
       text-align: center;
     }
 
     .app-title {
-      font: 18px 'Source Sans Pro', sans-serif;
       color: #2D2F30;
+      display: block;
+      font: 24px 'Source Sans Pro', sans-serif;
+      margin-bottom: 30px;
+    }
+
+    .app-description {
+      display: block;
+      font: 18px/24px 'Source Serif Pro', serif;
+      margin-bottom: 60px;
+    }
+
+    .left-col {
+      margin-right: 0px;
+    }
+
+    .right-col {
+      float: left;
+    }
+
+    #devicemockup {
+      width: 201px;
+      height: 409px;
     }
 
     #section1 {
@@ -156,18 +177,32 @@
     }
 
     @media screen and (max-width: 810px) {
-  #section1, #section2, #section3, #section4, #section5  {
-      margin-left: 150px;
-
+      #section1,
+      #section2,
+      #section3,
+      #section4,
+      #section5 {
+        margin-left: 150px;
+      }
     }
-}
   </style>
 </head>
 
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="15">
   <div class="intro">
-    <p class="app-title">FinestWebView</p>
-    <h1>Beautiful and customisable Android Activity<br>that shows web pages within an app</h1>
+    <span class="app-title">FinestWebView</span>
+    <span class="app-description">Beautiful and customisable Android Activity<br>that shows web pages within an app</span>
+    <div class="row">
+      <div class="col-sm-4" "left-col">
+        <span><h4>See this</h4></span>
+      </div>
+      <div class="col-sm-4">
+        <img id="devicemockup" src="/assets/images/googlepixel_white.png" />
+      </div>
+      <div class="col-sm-4" "right-col">
+        <span><h4>See this</h4></span>
+      </div>
+    </div>
   </div><br>
 
   <div class="container">
@@ -184,8 +219,8 @@
             <ul class="dropdown-menu">
               <li><a href="#section41">Section 4-1</a></li>
               <li><a href="#section42">Section 4-2</a></li> -->
-            </ul>
-          </li>
+        </ul>
+        </li>
         </ul>
       </nav>
       <div class="col-sm-9">
