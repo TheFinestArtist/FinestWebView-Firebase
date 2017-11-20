@@ -202,6 +202,26 @@
       height: 320px;
     }
 
+    #image-transition {
+      position: relative;
+    }
+
+    #image-transition img {
+      position: absolute;
+      left: 10px;
+      opacity: 1;
+      -webkit-transition: opacity 1s ease-in-out;
+      -moz-transition: opacity 1s ease-in-out;
+      -o-transition: opacity 1s ease-in-out;
+      -ms-transition: opacity 1s ease-in-out;
+      transition: opacity 1s ease-in-out;
+    }
+
+    #image-transition img.top:hover {
+      opacity: 0;
+    }
+
+
     #section1 {
       display: block;
       height: 500px;
@@ -335,8 +355,9 @@
         <span class="feature-left"><h4>Custom typeface & translation</h4></span>
       </div>
       <div class="col-sm-4">
-        <div class="pixeldevice">
-          <img class="pixelscreen" src="/assets/images/test.png" />
+        <div id="image-transition" class="pixeldevice">
+          <img class="bottom pixelscreen" src="/assets/images/test.png" />
+          <img class="top pixelscreen" src="/assets/images/test2.png" />
         </div>
       </div>
       <div class="col-sm-4" "right-col">
