@@ -187,9 +187,19 @@
       text-align: left;
     }
 
-    #devicemockup {
+    .pixeldevice {
+      background-image: url(../assets/images/googlepixel_white.png);
+      display: inline-block;
+      background-size: 201px 409px;
+      background-position: 1px 0px;
       width: 201px;
       height: 409px;
+      padding: 41px 0px;
+    }
+
+    .pixeldevice img {
+      width: 181px;
+      height: 320px;
     }
 
     #section1 {
@@ -219,66 +229,64 @@
     }
 
 
-<!--Dropdown-->
+    <!--Dropdown-->
     /* Dropdown Button */
 
-<!-- button? -->
-    button {
+    <!-- button? -->button {
       text-decoration: none;
     }
 
     .dropbtn {
-        border-color: red;
-        color: #7E8491;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-        padding: 0;
-
+      border-color: red;
+      color: #7E8491;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      padding: 0;
     }
-
     /* The container <div> - needed to position the dropdown content */
+
     .dropdown {
-        position: relative;
-        display: inline-block;
+      position: relative;
+      display: inline-block;
     }
-
     /* Dropdown Content (Hidden by Default) */
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #fff;
-        min-width: 160px;
-        border: solid 1px #E9ECF1;
-        border-radius: 2px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-        z-index: 1;
-    }
 
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      min-width: 160px;
+      border: solid 1px #E9ECF1;
+      border-radius: 2px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+    }
     /* Links inside the dropdown */
+
     .dropdown-content a {
-        color: #7E8491;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
+      color: #7E8491;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
     }
 
     .dropdown-content a:hover {
-        color: #2D2F30;
+      color: #2D2F30;
     }
-
     /* Change color of dropdown links on hover */
+
     .dropdown-content a:hover {
       background-color: #E9ECF1
     }
-
     /* Show the dropdown menu on hover */
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
 
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
     /* Change the background color of the dropdown button when the dropdown content is shown */
+
     .dropdown:hover .dropbtn {
       color: #2D2F30;
     }
@@ -303,13 +311,12 @@
       <ul class="nav navbar-nav navbar-right">
         <li class="main-nav-item"><a href="#section1">Documentation</a></li>
         <li class="main-nav-item dropdown">
-          <button class="dropbtn">Dropdown</button>
+          <button class="dropbtn">Download</button>
           <div class="dropdown-content">
             <a href="#">Sample project</a>
             <a href="#">Googleplay</a>
           </div>
         </li>
-        <li class="main-nav-item"><a href="#">Download</a></li>
         <li class="main-nav-item"><a href="https://github.com/TheFinestArtist/FinestWebView-Android" target="_blank">Github</a></li>
         <li>
       </ul>
@@ -320,7 +327,7 @@
     <span class="app-title">FinestWebView</span>
     <span class="app-description">Beautiful and customisable Android Activity<br>that shows web pages within an app</span>
     <div class="row">
-      <div class="col-sm-4" "left-col">
+      <div class="col-sm-4 left-col">
         <span class="feature-left"><h4>Builder pattern</h4></span>
         <span class="feature-left"><h4>Webview listeners</h4></span>
         <span class="feature-left"><h4>Support collapsing toolbar &<br> contextual actionbar</h4></span>
@@ -328,7 +335,9 @@
         <span class="feature-left"><h4>Custom typeface & translation</h4></span>
       </div>
       <div class="col-sm-4">
-        <img id="devicemockup" src="/assets/images/googlepixel_white.png" />
+        <div class="pixeldevice">
+          <img class="pixelscreen" src="/assets/images/test.png" />
+        </div>
       </div>
       <div class="col-sm-4" "right-col">
         <span class="feature-right"><h4>Material design &<br> Pre-made icons</h4></span>

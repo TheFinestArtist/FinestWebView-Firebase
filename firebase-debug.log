@@ -1,36 +1,36 @@
-[debug] [2017-11-19T17:27:42.127Z] ----------------------------------------------------------------------
-[debug] [2017-11-19T17:27:42.130Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
-[debug] [2017-11-19T17:27:42.130Z] CLI Version:   3.13.1
-[debug] [2017-11-19T17:27:42.130Z] Platform:      darwin
-[debug] [2017-11-19T17:27:42.131Z] Node Version:  v6.11.1
-[debug] [2017-11-19T17:27:42.131Z] Time:          Sun Nov 19 2017 17:27:42 GMT+0000 (GMT)
-[debug] [2017-11-19T17:27:42.131Z] ----------------------------------------------------------------------
+[debug] [2017-11-20T20:10:51.715Z] ----------------------------------------------------------------------
+[debug] [2017-11-20T20:10:51.718Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2017-11-20T20:10:51.719Z] CLI Version:   3.13.1
+[debug] [2017-11-20T20:10:51.719Z] Platform:      darwin
+[debug] [2017-11-20T20:10:51.719Z] Node Version:  v6.11.1
+[debug] [2017-11-20T20:10:51.719Z] Time:          Mon Nov 20 2017 20:10:51 GMT+0000 (GMT)
+[debug] [2017-11-20T20:10:51.719Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2017-11-19T17:27:42.159Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2017-11-19T17:27:42.160Z] > authorizing via signed-in user
-[debug] [2017-11-19T17:27:42.165Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2017-11-19T17:27:42.166Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/szGTaV-3yx9KAGxKaEi3qc3futeItS4tWN6IrA2fBQk',
+[debug] [2017-11-20T20:10:51.739Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-11-20T20:10:51.739Z] > authorizing via signed-in user
+[debug] [2017-11-20T20:10:51.742Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-11-20T20:10:51.742Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/szGTaV-3yx9KAGxKaEi3qc3futeItS4tWN6IrA2fBQk',
   client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
   client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
   grant_type: 'refresh_token',
   scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Sun Nov 19 2017 17:27:42 GMT+0000 (GMT)
-[debug] [2017-11-19T17:27:42.604Z] <<< HTTP RESPONSE 200
-[debug] [2017-11-19T17:27:42.643Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/finestwebview  
- Sun Nov 19 2017 17:27:42 GMT+0000 (GMT)
-[debug] [2017-11-19T17:27:43.903Z] <<< HTTP RESPONSE 200
-[debug] [2017-11-19T17:27:43.905Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/finestwebview/tokens  
- Sun Nov 19 2017 17:27:43 GMT+0000 (GMT)
-[debug] [2017-11-19T17:27:44.723Z] <<< HTTP RESPONSE 200
+ Mon Nov 20 2017 20:10:51 GMT+0000 (GMT)
+[debug] [2017-11-20T20:10:52.022Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-20T20:10:52.037Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/finestwebview  
+ Mon Nov 20 2017 20:10:52 GMT+0000 (GMT)
+[debug] [2017-11-20T20:10:53.183Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-20T20:10:53.185Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/finestwebview/tokens  
+ Mon Nov 20 2017 20:10:53 GMT+0000 (GMT)
+[debug] [2017-11-20T20:10:54.004Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from '/Users/min/Documents/FinestWebview-Firebase'...
 [info] 
-[debug] [2017-11-19T17:27:44.796Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/finestwebview  
- Sun Nov 19 2017 17:27:44 GMT+0000 (GMT)
-[debug] [2017-11-19T17:27:46.109Z] <<< HTTP RESPONSE 200
-[debug] [2017-11-19T17:27:46.110Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/858518193081/clients/_:getWebAppConfig  
- Sun Nov 19 2017 17:27:46 GMT+0000 (GMT)
-[debug] [2017-11-19T17:27:46.983Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-20T20:10:54.016Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/finestwebview  
+ Mon Nov 20 2017 20:10:54 GMT+0000 (GMT)
+[debug] [2017-11-20T20:10:55.297Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-20T20:10:55.298Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/858518193081/clients/_:getWebAppConfig  
+ Mon Nov 20 2017 20:10:55 GMT+0000 (GMT)
+[debug] [2017-11-20T20:10:57.398Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: public
 [info] ✔  hosting: Local server: http://localhost:5000
 
