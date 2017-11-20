@@ -218,6 +218,72 @@
       height: 500px;
     }
 
+
+<!--Dropdown-->
+    /* Dropdown Button */
+
+<!-- button? -->
+    button {
+      text-decoration: none;
+    }
+
+    .dropbtn {
+        border-color: red;
+        color: #7E8491;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+
+    }
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        min-width: 160px;
+        border: solid 1px #E9ECF1;
+        border-radius: 2px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+        z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: #7E8491;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        color: #2D2F30;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+      background-color: #E9ECF1
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {
+      color: #2D2F30;
+    }
+
+
     @media screen and (max-width: 810px) {
       #section1,
       #section2,
@@ -236,6 +302,13 @@
     <div class="container-fluid">
       <ul class="nav navbar-nav navbar-right">
         <li class="main-nav-item"><a href="#section1">Documentation</a></li>
+        <li class="main-nav-item dropdown">
+          <button class="dropbtn">Dropdown</button>
+          <div class="dropdown-content">
+            <a href="#">Sample project</a>
+            <a href="#">Googleplay</a>
+          </div>
+        </li>
         <li class="main-nav-item"><a href="#">Download</a></li>
         <li class="main-nav-item"><a href="https://github.com/TheFinestArtist/FinestWebView-Android" target="_blank">Github</a></li>
         <li>
