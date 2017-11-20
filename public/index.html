@@ -26,12 +26,14 @@
   <style>
     body {
       position: relative;
+      padding-top: 42px;
     }
 
     h1 {
       color: #2D2F30;
       display: block;
       font: 24px 'Source Serif Pro', serif;
+      margin-top: 4px;
     }
 
     h2 {
@@ -63,7 +65,6 @@
     }
 
     a:active {
-      background-color: yellow;
       text-decoration: none;
     }
 
@@ -73,17 +74,45 @@
     }
 
     .affix {
-      top: 20px;
+      top: 42px;
       z-index: 9999 !important;
     }
 
     nav {
       height: 42px;
-      color: #2D2F30;
       font: 14px/24px 'Source Sans Pro', sans-serif;
       padding: 0px;
     }
 
+    .navbar-default {
+      padding: 10px 0;
+      background-color: #fff;
+      border-color: #fff;
+    }
+
+    .navbar-nav>li>a {
+      font: 16px 'Source Sans Pro', sans-serif;
+    }
+
+    .main-nav-item {
+      margin-right: 30px;
+    }
+
+
+    .container-fluid {
+      height: 42px;
+    }
+
+    a {
+      color: #2D2F30;
+      padding: 0px;
+    }
+
+    li.active {
+      font-weight: 600;
+      color: #2D2F30;
+      text-decoration: none;
+    }
 
     .nav>li>a {
       border-radius: 0px;
@@ -106,7 +135,7 @@
 
     .nav-pills>li.active:hover>a {
       background-color: #E9ECF1;
-      color: #7E8491;
+      color: #2D2F30;
       text-decoration: none;
     }
 
@@ -118,6 +147,10 @@
       background-color: #E9ECF1;
       border-radius: 2px;
       padding: 20px;
+    }
+
+    .col-sm-3 {
+      padding-top: 42px;
     }
 
     .intro {
@@ -147,11 +180,11 @@
     }
 
     .feature-left {
-            text-align: right;
+      text-align: right;
     }
 
     .feature-right {
-            text-align: left;
+      text-align: left;
     }
 
     #devicemockup {
@@ -162,6 +195,7 @@
     #section1 {
       display: block;
       height: 500px;
+      padding-top: 42px;
     }
 
     #section2 {
@@ -197,6 +231,18 @@
 </head>
 
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="15">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="main-nav-item"><a href="#section1">Documentation</a></li>
+        <li class="main-nav-item"><a href="#">Download</a></li>
+        <li class="main-nav-item"><a href="https://github.com/TheFinestArtist/FinestWebView-Android" target="_blank">Github</a></li>
+        <li>
+      </ul>
+    </div>
+  </nav>
+
   <div class="intro">
     <span class="app-title">FinestWebView</span>
     <span class="app-description">Beautiful and customisable Android Activity<br>that shows web pages within an app</span>
