@@ -63,6 +63,10 @@
       text-decoration: none;
     }
 
+    .underline {
+      border-bottom: solid 2px #343A40;
+    }
+
     li.active {
       font-weight: 600;
       color: #2D2F30;
@@ -105,8 +109,10 @@
     .nav-pills>li.active>a {
       background-color: yellow;
       font-weight: 600;
+      border-radius: 2px;
       color: #2D2F30;
       text-decoration: none;
+      padding: 2px;
     }
 
     .nav-item {
@@ -116,8 +122,7 @@
     .main-nav-item {
       margin-right: 30px;
     }
-
-  /* Dropdown */
+    /* Dropdown */
     /* Dropdown Button */
 
     button {
@@ -178,8 +183,7 @@
     .dropdown:hover .dropbtn {
       color: #2D2F30;
     }
-
-  /* dropdown ends*/
+    /* dropdown ends*/
 
     .intro {
       height: 1000px;
@@ -259,6 +263,10 @@
       padding-top: 42px;
     }
 
+    #nav-expand {
+      margin-bottom: 18px;
+      padding-left: 5px;
+    }
 
     #section1 {
       display: block;
@@ -266,7 +274,10 @@
       margin-bottom: 90px;
     }
 
-    #section2, #section3, #section4, #section5 {
+    #section2,
+    #section3,
+    #section4,
+    #section5 {
       display: block;
       padding-top: 42px;
       height: 500px;
@@ -294,7 +305,8 @@
     }
 
 
-@media screen and (max-width: 810px) {
+
+    @media screen and (max-width: 810px) {
       #section1,
       #section2,
       #section3,
@@ -367,7 +379,13 @@
       <!-- Side nav -->
       <nav class="col-sm-3" id="myScrollspy">
         <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="1042">
-          <li><a href="#section1">Getting Started</a></li>
+          <li data-toggle="collapse" data-target="#nav-expand"><a href="#section1">Getting Started</a></li>
+          <div id="nav-expand" class="collapse">
+            <span><a class="underline" href="#demo">Demo</a></span><br>
+            <span><a class="underline" href="#">Gradle dependency (jcenter)</a></span><br>
+            <span><a class="underline" href="#">Manifest settings</a></span><br>
+            <span><a class="underline" href="#">Basic WebView</a></span>
+          </div>
           <li><a href="#section2">Customization</a></li>
           <li><a href="#section3">More customizations</a></li>
           <li><a href="#section4">Designer</a></li>
@@ -381,7 +399,7 @@
         <div id="section1">
           <div class="doc-title">
             <h1>Getting Started</h1></div>
-          <h3>Demo Video</h3>
+          <h3 id="demo">Demo Video</h3>
           <h4><a href=#>View</a></h4>
           <h3>Gradle Dependency (jcenter)</h3>
           <h4>Easily reference the library in your Android projects using this dependency in your module's <code>build.gradle</code> file.</h4>
@@ -398,8 +416,8 @@ You have to add FinestWebViewActivity in your <code>AndroidManifest.xml</code></
     android:configChanges="keyboardHidden|orientation|screenSize"
     android:screenOrientation="sensor"
     android:theme="@style/FinestWebViewTheme.Light" /&gt;</code></pre>
-    <h3>Basic WebView</h3>
-    <pre><code>new FinestWebView.Builder(activity).show(url);</pre></code>
+          <h3>Basic WebView</h3>
+          <pre><code>new FinestWebView.Builder(activity).show(url);</pre></code>
         </div>
         <div id="section2">
           <h1>Customization</h1>
