@@ -6,27 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FinestWebView</title>
   <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
-  <script>
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyA90DhkqcJ7KafHnhJhuDINwLHTiy1VHh0",
-      authDomain: "finestwebview.firebaseapp.com",
-      databaseURL: "https://finestwebview.firebaseio.com",
-      projectId: "finestwebview",
-      storageBucket: "finestwebview.appspot.com",
-      messagingSenderId: "858518193081"
-    };
-    firebase.initializeApp(config);
-  </script>
-
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Source+Sans+Pro:400,600|Source+Serif+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
   <style>
     body {
-      position: relative;
-      padding-top: 42px;
+      margin-top: 42px;
     }
 
     h1 {
@@ -73,45 +63,15 @@
       text-decoration: none;
     }
 
-    .affix {
-      top: 42px;
-      z-index: 9999 !important;
-    }
-
-    nav {
-      height: 42px;
-      font: 14px/24px 'Source Sans Pro', sans-serif;
-      padding: 0px;
-    }
-
-    .navbar-default {
-      padding: 10px 0;
-      background-color: #fff;
-      border-color: #fff;
-    }
-
-    .navbar-nav>li>a {
-      font: 16px 'Source Sans Pro', sans-serif;
-    }
-
-    .main-nav-item {
-      margin-right: 30px;
-    }
-
-
-    .container-fluid {
-      height: 42px;
-    }
-
-    a {
-      color: #2D2F30;
-      padding: 0px;
-    }
-
     li.active {
       font-weight: 600;
       color: #2D2F30;
       text-decoration: none;
+    }
+
+    nav {
+      font: 14px/24px 'Source Sans Pro', sans-serif;
+      height: 42px;
     }
 
     .nav>li>a {
@@ -120,11 +80,14 @@
       padding: 0px;
     }
 
-    .nav-pills>li.active>a {
-      background-color: yellow;
-      font-weight: 600;
-      color: #2D2F30;
-      text-decoration: none;
+    .navbar-default {
+      background-color: #fff;
+      border: 0;
+      padding: 10px 0;
+    }
+
+    .navbar-nav>li>a {
+      font: 16px 'Source Sans Pro', sans-serif;
     }
 
     .nav-pills>li:hover>a {
@@ -139,19 +102,84 @@
       text-decoration: none;
     }
 
+    .nav-pills>li.active>a {
+      background-color: yellow;
+      font-weight: 600;
+      color: #2D2F30;
+      text-decoration: none;
+    }
+
     .nav-item {
       margin-left: 30px;
     }
 
-    .highlight {
-      background-color: #E9ECF1;
-      border-radius: 2px;
-      padding: 20px;
+    .main-nav-item {
+      margin-right: 30px;
     }
 
-    .col-sm-3 {
-      padding-top: 42px;
+  /* Dropdown */
+    /* Dropdown Button */
+
+    button {
+      text-decoration: none;
     }
+
+    .dropbtn {
+      border-color: red;
+      color: #7E8491;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+    }
+    /* The container <div> - needed to position the dropdown content */
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    /* Dropdown Content (Hidden by Default) */
+
+    .dropdown-content {
+      display: none;
+      font-size: 16px;
+      position: absolute;
+      background-color: #fff;
+      min-width: 160px;
+      border: 0;
+      border-radius: 2px;
+      z-index: 1;
+    }
+    /* Links inside the dropdown */
+
+    .dropdown-content a {
+      color: #7E8491;
+      padding: 2px 0;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      color: #2D2F30;
+    }
+    /* Change color of dropdown links on hover */
+
+    .dropdown-content a:hover {
+      background-color: #E9ECF1
+    }
+    /* Show the dropdown menu on hover */
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+
+    .dropdown:hover .dropbtn {
+      color: #2D2F30;
+    }
+
+  /* dropdown ends*/
 
     .intro {
       height: 1000px;
@@ -221,98 +249,52 @@
       opacity: 0;
     }
 
+    .affix {
+      top: 48px;
+      width: 100%;
+      z-index: 9999 !important;
+    }
 
-    #section1 {
-      display: block;
-      height: 500px;
+    .col-sm-3 {
       padding-top: 42px;
     }
 
-    #section2 {
+
+    #section1 {
       display: block;
+      padding-top: 42px;
+      margin-bottom: 90px;
+    }
+
+    #section2, #section3, #section4, #section5 {
+      display: block;
+      padding-top: 42px;
       height: 500px;
     }
 
-    #section3 {
-      display: block;
-      height: 500px;
+    .doc-title {
+      margin-bottom: 30px;
     }
 
-    #section4 {
-      display: block;
-      height: 500px;
-    }
-
-    #section5 {
-      display: block;
-      height: 500px;
-    }
-
-
-    <!--Dropdown-->
-    /* Dropdown Button */
-
-    <!-- button? -->button {
-      text-decoration: none;
-    }
-
-    .dropbtn {
-      border-color: red;
-      color: #7E8491;
-      padding: 16px;
-      font-size: 16px;
-      border: none;
-      cursor: pointer;
-      padding: 0;
-    }
-    /* The container <div> - needed to position the dropdown content */
-
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-    /* Dropdown Content (Hidden by Default) */
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #fff;
-      min-width: 160px;
-      border: solid 1px #E9ECF1;
+    code {
+      background-color: #E9ECF1 !important;
       border-radius: 2px;
-      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
-      z-index: 1;
-    }
-    /* Links inside the dropdown */
-
-    .dropdown-content a {
       color: #7E8491;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
+      font-size: 11px;
     }
 
-    .dropdown-content a:hover {
-      color: #2D2F30;
-    }
-    /* Change color of dropdown links on hover */
-
-    .dropdown-content a:hover {
-      background-color: #E9ECF1
-    }
-    /* Show the dropdown menu on hover */
-
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-    /* Change the background color of the dropdown button when the dropdown content is shown */
-
-    .dropdown:hover .dropbtn {
-      color: #2D2F30;
+    pre {
+      background-color: #E9ECF1;
+      border: 0;
+      border-radius: 2px;
+      color: #7E8491;
+      font-size: 11px;
+      padding: 15px;
+      max-width: 640px;
     }
 
 
-    @media screen and (max-width: 810px) {
+@media screen and (max-width: 810px) {
       #section1,
       #section2,
       #section3,
@@ -324,12 +306,16 @@
   </style>
 </head>
 
-<body data-spy="scroll" data-target="#myScrollspy" data-offset="15">
+<body data-spy="scroll" data-target="#myScrollspy">
 
+
+  <!--Main nav-->
   <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
+    <div>
       <ul class="nav navbar-nav navbar-right">
-        <li class="main-nav-item"><a href="#section1">Documentation</a></li>
+        <li class="main-nav-item">
+          <a href="#section1">Documentation</a>
+        </li>
         <li class="main-nav-item dropdown">
           <button class="dropbtn">Download</button>
           <div class="dropdown-content">
@@ -337,17 +323,20 @@
             <a href="#">Googleplay</a>
           </div>
         </li>
-        <li class="main-nav-item"><a href="https://github.com/TheFinestArtist/FinestWebView-Android" target="_blank">Github</a></li>
-        <li>
+        <li class="main-nav-item">
+          <a href="https://github.com/TheFinestArtist/FinestWebView-Android" target="_blank">Github</a>
+        </li>
       </ul>
     </div>
   </nav>
 
+
+  <!--Intro-->
   <div class="intro">
     <span class="app-title">FinestWebView</span>
     <span class="app-description">Beautiful and customisable Android Activity<br>that shows web pages within an app</span>
     <div class="row">
-      <div class="col-sm-4 left-col">
+      <div class="foo col-sm-4 left-col">
         <span class="feature-left"><h4>Builder pattern</h4></span>
         <span class="feature-left"><h4>Webview listeners</h4></span>
         <span class="feature-left"><h4>Support collapsing toolbar &<br> contextual actionbar</h4></span>
@@ -360,7 +349,7 @@
           <img class="top pixelscreen" src="/assets/images/test2.png" />
         </div>
       </div>
-      <div class="col-sm-4" "right-col">
+      <div class="bar col-sm-4 right-col">
         <span class="feature-right"><h4>Material design &<br> Pre-made icons</h4></span>
         <span class="feature-right"><h4>Custom themes & Custom<br> transition animations</h4></span>
         <span class="feature-right"><h4>SwipeRefreshLayout &<br> Progressbar</h4></span>
@@ -370,36 +359,47 @@
     </div>
   </div><br>
 
+
+  <!--Documentation-->
   <div class="container">
     <div class="row">
+
+      <!-- Side nav -->
       <nav class="col-sm-3" id="myScrollspy">
-        <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="1000">
+        <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="1042">
           <li><a href="#section1">Getting Started</a></li>
           <li><a href="#section2">Customization</a></li>
           <li><a href="#section3">More customizations</a></li>
           <li><a href="#section4">Designer</a></li>
           <li><a href="#section5">License</a></li>
-          <!-- <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#section41">Section 4-1</a></li>
-              <li><a href="#section42">Section 4-2</a></li> -->
-        </ul>
-        </li>
         </ul>
       </nav>
+
+
+      <!-- Documentation contents -->
       <div class="col-sm-9">
         <div id="section1">
-          <h1>Getting Started</h1>
-          <h4>Random scrollable text here</h4>
+          <div class="doc-title">
+            <h1>Getting Started</h1></div>
           <h3>Demo Video</h3>
           <h4><a href=#>View</a></h4>
           <h3>Gradle Dependency (jcenter)</h3>
-          <h4>Easily reference the library in your Android projects using this dependency in your module's build.gradle file.</h4>
-          <div class="highlight">
-            <h5>dependencies {
-  compile 'com.thefinestartist:finestwebview:1.2.7'
-}</h5></div>
+          <h4>Easily reference the library in your Android projects using this dependency in your module's <code>build.gradle</code> file.</h4>
+          <pre><code>dependencies {
+    compile 'com.thefinestartist:finestwebview:1.2.7'
+  }</code></pre>
+          <h3>Manifest Settings</h3>
+          <h4>FinestWebView is basically and Android activity with webview, toolbar and etc.
+You have to add FinestWebViewActivity in your <code>AndroidManifest.xml</code></h4>
+          <pre><code>&lt;uses-permission android:name="android.permission.INTERNET" /&gt;
+
+&lt;activity
+    android:name="com.thefinestartist.finestwebview.FinestWebViewActivity"
+    android:configChanges="keyboardHidden|orientation|screenSize"
+    android:screenOrientation="sensor"
+    android:theme="@style/FinestWebViewTheme.Light" /&gt;</code></pre>
+    <h3>Basic WebView</h3>
+    <pre><code>new FinestWebView.Builder(activity).show(url);</pre></code>
         </div>
         <div id="section2">
           <h1>Customization</h1>
@@ -422,6 +422,26 @@
   </div>
 
 
+  <!--Highlight js-->
+  <link rel="stylesheet" href="/path/to/styles/github.css">
+  <script src="/path/to/highlight.pack.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+  <!--SlideIn-->
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script>
+    window.sr = ScrollReveal({
+      reset: true,
+      origin: 'left',
+      delay: '0',
+    });
+    sr.reveal('.foo');
+    sr.reveal('.bar', {
+      delay: 200
+    });
+  </script>
 </body>
 
 </html>
