@@ -142,7 +142,6 @@
 
     .dropdown {
       position: relative;
-      display: inline-block;
     }
     /* Dropdown Content (Hidden by Default) */
 
@@ -186,7 +185,7 @@
     /* dropdown ends*/
 
     .intro {
-      height: 1000px;
+      height: 960px;
       text-align: center;
     }
 
@@ -204,34 +203,40 @@
     }
 
     .left-col {
-      margin-right: 0px;
+      top: 140px;
     }
 
     .right-col {
-      margin-left: 0px;
+      top: 140px;
     }
 
     .feature-left {
+      color: #7E8491;
+      font: 16px 'Source Sans Pro', sans-serif;
       text-align: right;
+      padding-bottom: 40px;
     }
 
     .feature-right {
+      color: #7E8491;
+      font: 16px 'Source Sans Pro', sans-serif;
       text-align: left;
+      padding-bottom: 32px;
     }
 
     .pixeldevice {
       background-image: url(../assets/images/googlepixel_white.png);
       display: inline-block;
-      background-size: 201px 409px;
+      background-size: 302px 614px;
       background-position: 1px 0px;
-      width: 201px;
-      height: 409px;
+      width: 302px;
+      height: 614px;
       padding: 41px 0px;
     }
 
     .pixeldevice img {
-      width: 181px;
-      height: 320px;
+      width: 270px;
+      height: 478px;
     }
 
     #image-transition {
@@ -240,7 +245,8 @@
 
     #image-transition img {
       position: absolute;
-      left: 10px;
+      top: 62px;
+      left: 15px;
       opacity: 1;
       -webkit-transition: opacity 1s ease-in-out;
       -moz-transition: opacity 1s ease-in-out;
@@ -348,25 +354,26 @@
     <span class="app-title">FinestWebView</span>
     <span class="app-description">Beautiful and customisable Android Activity<br>that shows web pages within an app</span>
     <div class="row">
-      <div class="foo col-sm-4 left-col">
-        <span class="feature-left"><h4>Builder pattern</h4></span>
-        <span class="feature-left"><h4>Webview listeners</h4></span>
-        <span class="feature-left"><h4>Support collapsing toolbar &<br> contextual actionbar</h4></span>
-        <span class="feature-left"><h4>Device rotation</h4></span>
-        <span class="feature-left"><h4>Custom typeface & translation</h4></span>
+      <div class="col-sm-4 left-col">
+        <p class="feature-left scrollReveal1">Builder pattern</p>
+        <p class="feature-left scrollReveal2">Webview listeners</p>
+        <p class="feature-left scrollReveal3">Support collapsing toolbar & <br>contextual actionbar</p>
+        <p class="feature-left scrollReveal4">Device rotation</p>
+        <p class="feature-left scrollReveal5">Custom typeface & translation</p>
+
       </div>
       <div class="col-sm-4">
         <div id="image-transition" class="pixeldevice">
-          <img class="bottom pixelscreen" src="/assets/images/test.png" />
-          <img class="top pixelscreen" src="/assets/images/test2.png" />
+          <img class="bottom pixelscreen" src="/assets/images/screenshot_wh.png" />
+          <img class="top pixelscreen" src="/assets/images/screenshot_red.png" />
         </div>
       </div>
-      <div class="bar col-sm-4 right-col">
-        <span class="feature-right"><h4>Material design &<br> Pre-made icons</h4></span>
-        <span class="feature-right"><h4>Custom themes & Custom<br> transition animations</h4></span>
-        <span class="feature-right"><h4>SwipeRefreshLayout &<br> Progressbar</h4></span>
-        <span class="feature-right"><h4>Gradient divider</h4></span>
-        <span class="feature-right"><h4>Supports Right to Left</h4></span>
+      <div class="col-sm-4 right-col">
+        <p class="feature-right scrollReveal1">Material design &<br> Pre-made icons</p>
+        <p class="feature-right scrollReveal2">Custom themes & Custom<br> transition animations</p>
+        <p class="feature-right scrollReveal3">SwipeRefreshLayout &<br> Progressbar</p>
+        <p class="feature-right scrollReveal4">Gradient divider</p>
+        <p class="feature-right scrollReveal5">Supports Right to Left</p>
       </div>
     </div>
   </div><br>
@@ -378,7 +385,7 @@
 
       <!-- Side nav -->
       <nav class="col-sm-3" id="myScrollspy">
-        <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="1042">
+        <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="1002">
           <li data-toggle="collapse" data-target="#nav-expand"><a href="#section1">Getting Started</a></li>
           <div id="nav-expand" class="collapse">
             <span><a class="underline" href="#demo">Demo</a></span><br>
@@ -455,9 +462,18 @@ You have to add FinestWebViewActivity in your <code>AndroidManifest.xml</code></
       origin: 'left',
       delay: '0',
     });
-    sr.reveal('.foo');
-    sr.reveal('.bar', {
+    sr.reveal('.scrollReveal1');
+    sr.reveal('.scrollReveal2', {
       delay: 200
+    });
+    sr.reveal('.scrollReveal3', {
+      delay: 400
+    });
+    sr.reveal('.scrollReveal4', {
+      delay: 600
+    });
+    sr.reveal('.scrollReveal5', {
+      delay: 800
     });
   </script>
 </body>
