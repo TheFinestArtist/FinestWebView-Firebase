@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Source+Sans+Pro:400,600|Source+Serif+Pro" rel="stylesheet">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
 
 
   <style>
@@ -78,6 +79,10 @@
       height: 42px;
     }
 
+    .nav-stacked>li+li {
+      margin-top: 0;
+    }
+
     .nav>li>a {
       border-radius: 0px;
       display: initial;
@@ -96,7 +101,8 @@
 
     .nav-pills>li:hover>a {
       background-color: #E9ECF1;
-      color: #7E8491;
+      font-weight: 600;
+      color: #2D2F30;
       text-decoration: none;
     }
 
@@ -403,79 +409,43 @@
 
       <!-- Documentation contents -->
       <div class="col-sm-9">
-        <div id="section1">
-          <div class="doc-title">
-            <h1>Getting Started</h1></div>
-          <h3 id="demo">Demo Video</h3>
-          <h4><a href=#>View</a></h4>
-          <h3>Gradle Dependency (jcenter)</h3>
-          <h4>Easily reference the library in your Android projects using this dependency in your module's <code>build.gradle</code> file.</h4>
-          <pre><code>dependencies {
-    compile 'com.thefinestartist:finestwebview:1.2.7'
-  }</code></pre>
-          <h3>Manifest Settings</h3>
-          <h4>FinestWebView is basically and Android activity with webview, toolbar and etc.
-You have to add FinestWebViewActivity in your <code>AndroidManifest.xml</code></h4>
-          <pre><code>&lt;uses-permission android:name="android.permission.INTERNET" /&gt;
-
-&lt;activity
-    android:name="com.thefinestartist.finestwebview.FinestWebViewActivity"
-    android:configChanges="keyboardHidden|orientation|screenSize"
-    android:screenOrientation="sensor"
-    android:theme="@style/FinestWebViewTheme.Light" /&gt;</code></pre>
-          <h3>Basic WebView</h3>
-          <pre><code>new FinestWebView.Builder(activity).show(url);</pre></code>
-        </div>
-        <div id="section2">
-          <h1>Customization</h1>
-          <h4>Random scrollable text here</h4>
-        </div>
-        <div id="section3">
-          <h1>More Customizations</h1>
-          <h4>Random scrollable text here</h4>
-        </div>
-        <div id="section4">
-          <h1>Designer</h1>
-          <h4>Random scrollable text here</h4>
-        </div>
-        <div id="section5">
-          <h1>License</h1>
-          <h4>Random scrollable text here</h4>
-        </div>
+        <div w3-include-html="documentation.html"></div>
       </div>
-    </div>
-  </div>
 
 
-  <!--Highlight js-->
-  <link rel="stylesheet" href="/path/to/styles/github.css">
-  <script src="/path/to/highlight.pack.js"></script>
-  <script>
-    hljs.initHighlightingOnLoad()
-  </script>
+      <!--Highlight js-->
+      <link rel="stylesheet" href="/path/to/styles/github.css">
+      <script src="/path/to/highlight.pack.js"></script>
+      <script>
+        hljs.initHighlightingOnLoad()
+      </script>
 
-  <!--SlideIn-->
-  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-  <script>
-    window.sr = ScrollReveal({
-      reset: true,
-      origin: 'left',
-      delay: '0',
-    });
-    sr.reveal('.scrollReveal1');
-    sr.reveal('.scrollReveal2', {
-      delay: 200
-    });
-    sr.reveal('.scrollReveal3', {
-      delay: 400
-    });
-    sr.reveal('.scrollReveal4', {
-      delay: 600
-    });
-    sr.reveal('.scrollReveal5', {
-      delay: 800
-    });
-  </script>
+      <!--SlideIn-->
+      <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+      <script>
+        window.sr = ScrollReveal({
+          reset: true,
+          origin: 'left',
+          delay: '0',
+        });
+        sr.reveal('.scrollReveal1');
+        sr.reveal('.scrollReveal2', {
+          delay: 200
+        });
+        sr.reveal('.scrollReveal3', {
+          delay: 400
+        });
+        sr.reveal('.scrollReveal4', {
+          delay: 600
+        });
+        sr.reveal('.scrollReveal5', {
+          delay: 800
+        });
+      </script>
+
+      <script>
+        w3.includeHTML();
+      </script>
 </body>
 
 </html>
