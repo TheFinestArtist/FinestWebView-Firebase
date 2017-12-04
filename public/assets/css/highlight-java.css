@@ -1,0 +1,77 @@
+.language-java .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #333;
+  background: #f8f8f8
+}
+
+.language-java .hljs-comment, .hljs-quote {
+  color: #998;
+  font-style: italic
+}
+
+.language-java .hljs-keyword, .hljs-selector-tag, .hljs-subst {
+  color: #333;
+  font-weight: bold
+}
+
+.language-java .hljs-number, .hljs-literal, .hljs-variable, .hljs-template-variable, .hljs-tag .hljs-attr {
+  color: #008080
+}
+
+.language-java .hljs-string, .hljs-doctag {
+  color: #d14
+}
+
+.language-java .hljs-title, .hljs-section, .hljs-selector-id {
+  color: #900;
+  font-weight: bold
+}
+
+.language-java .hljs-subst {
+  font-weight: normal
+}
+
+.language-java .hljs-type, .hljs-class .hljs-title {
+  color: #458;
+  font-weight: bold
+}
+
+.language-java .hljs-tag, .hljs-name, .hljs-attribute {
+  color: #000080;
+  font-weight: normal
+}
+
+.language-java .hljs-regexp, .hljs-link {
+  color: #009926
+}
+
+.language-java .hljs-symbol, .hljs-bullet {
+  color: #990073
+}
+
+.language-java .hljs-built_in, .hljs-builtin-name {
+  color: #0086b3
+}
+
+.language-java .hljs-meta {
+  color: #999;
+  font-weight: bold
+}
+
+.language-java .hljs-deletion {
+  background: #fdd
+}
+
+.language-java .hljs-addition {
+  background: #dfd
+}
+
+.language-java .hljs-emphasis {
+  font-style: italic
+}
+
+.language-java .hljs-strong {
+  font-weight: bold
+}
