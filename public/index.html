@@ -37,12 +37,13 @@
       display: block;
       font: 14px 'Source Sans Pro', sans-serif;
       font-weight: 600;
-            margin-top: 30px;
+      margin-top: 30px;
     }
 
     p {
       color: #7E8491;
       font: 14px/24px 'Source Sans Pro', sans-serif;
+      margin-left: 5px;
     }
     /*h5 {
       color: #7E8491;
@@ -65,7 +66,6 @@
       max-width: 640px;
       margin-top: 20px;
     }
-
     /*.language-xml {
       overflow-x: auto;
       white-space: nowrap;
@@ -130,6 +130,11 @@
       font: 16px 'Source Sans Pro', sans-serif;
     }
 
+    .navbar-nav>li:hover>a {
+      font: 16px 'Source Sans Pro', sans-serif;
+      font-weight: 600;
+    }
+
     .nav-pills>li:hover>a {
       background-color: #E9ECF1;
       font-weight: 600;
@@ -159,7 +164,10 @@
     .main-nav-item {
       margin-right: 30px;
     }
-    /* Dropdown */
+
+
+    /* Dropdown starts */
+
     /* Dropdown Button */
 
     button {
@@ -167,13 +175,13 @@
     }
 
     .dropbtn {
+      background-color: #fff;
+      border: none;
       border-color: red;
       color: #7E8491;
-      padding: 16px;
       font-size: 16px;
-      border: none;
+      padding: 0 0 8px 0;
       cursor: pointer;
-      padding: 0;
     }
     /* The container <div> - needed to position the dropdown content */
 
@@ -183,22 +191,25 @@
     /* Dropdown Content (Hidden by Default) */
 
     .dropdown-content {
-      display: none;
-      font-size: 16px;
-      position: absolute;
       background-color: #fff;
-      min-width: 160px;
       border: 0;
       border-radius: 2px;
+      display: none;
+      font-size: 16px;
+      min-width: 160px;
+      padding-bottom: 10px;
+      position: absolute;
       z-index: 1;
     }
+
     /* Links inside the dropdown */
 
     .dropdown-content a {
       color: #7E8491;
-      padding: 2px 0;
+      border-radius: 2px;
+      padding: 3px;
       text-decoration: none;
-      display: block;
+      /* display: block; */
     }
 
     .dropdown-content a:hover {
@@ -218,6 +229,13 @@
 
     .dropdown:hover .dropbtn {
       color: #2D2F30;
+      font-weight: 600;
+    }
+
+    .sample_download {
+      display: block;
+      max-width: 109px;
+      margin-bottom: 5px;
     }
     /* dropdown ends*/
 
@@ -320,13 +338,11 @@
     #Customization_34,
     #More_customizations_301,
     #Designer_442,
-    #License_450
-     {
+    #License_450 {
       display: block;
       padding-top: 48px;
       /*height: 500px;*/
     }
-
     /*.doc-title {
       margin-bottom: 30px;
     }*/
@@ -340,7 +356,6 @@
         margin-left: 150px;
       }
     }
-
   </style>
 </head>
 
@@ -352,13 +367,13 @@
     <div>
       <ul class="nav navbar-nav navbar-right">
         <li class="main-nav-item">
-          <a href="#section1">Documentation</a>
+          <a href="#Getting_started_0">Documentation</a>
         </li>
         <li class="main-nav-item dropdown">
           <button class="dropbtn">Download</button>
           <div class="dropdown-content">
-            <a href="#">Sample project</a>
-            <a href="#">Googleplay</a>
+            <a class="sample_download" href="https://github.com/TheFinestArtist/FinestWebView-Android/blob/master/sample/sample-release.apk?raw=true">Sample project</a>
+            <a href="https://play.google.com/store/apps/details?id=com.thefinestartist.finestwebview.sample" target="_blank">Googleplay</a>
           </div>
         </li>
         <li class="main-nav-item">
