@@ -7,26 +7,26 @@
 }
 
 .language-java .hljs-comment, .hljs-quote {
-  color: #998;
+  color: #868e96;
   font-style: italic
 }
 
 .language-java .hljs-keyword, .hljs-selector-tag, .hljs-subst {
-  color: #333;
-  font-weight: bold
+  color: #1c7cd6;
+}
+
+.language-java .hljs-keyword {
+  color: #f03e3e;
 }
 
 .language-java .hljs-number, .hljs-literal, .hljs-variable, .hljs-template-variable, .hljs-tag .hljs-attr {
   color: #008080
 }
 
-.language-java .hljs-string, .hljs-doctag {
-  color: #d14
-}
+
 
 .language-java .hljs-title, .hljs-section, .hljs-selector-id {
-  color: #900;
-  font-weight: bold
+  color: #000;
 }
 
 .language-java .hljs-subst {
@@ -35,7 +35,6 @@
 
 .language-java .hljs-type, .hljs-class .hljs-title {
   color: #458;
-  font-weight: bold
 }
 
 .language-java .hljs-tag, .hljs-name, .hljs-attribute {
@@ -57,7 +56,6 @@
 
 .language-java .hljs-meta {
   color: #999;
-  font-weight: bold
 }
 
 .language-java .hljs-deletion {
@@ -73,5 +71,13 @@
 }
 
 .language-java .hljs-strong {
-  font-weight: bold
+}
+
+
+.language-java .hljs-annotation {
+  color: #f03e3e;
+}
+
+.language-java .hljs-string, .hljs-doctag {
+  color: #364fc7;
 }

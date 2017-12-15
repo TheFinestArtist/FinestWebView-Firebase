@@ -17,6 +17,7 @@
   <style>
     body {
       margin-top: 42px;
+      overflow-x: hidden;
     }
 
     h2 {
@@ -36,6 +37,7 @@
       display: block;
       font: 14px 'Source Sans Pro', sans-serif;
       font-weight: 600;
+            margin-top: 30px;
     }
 
     p {
@@ -61,7 +63,18 @@
       font-size: 11px;
       padding: 15px;
       max-width: 640px;
+      margin-top: 20px;
     }
+
+    /*.language-xml {
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    .language-java {
+      overflow-x: auto;
+      white-space: nowrap;
+    }*/
 
     a {
       /*border-bottom: 2px solid #2D2F30 !important;*/
@@ -80,6 +93,10 @@
 
     .underline {
       border-bottom: solid 2px #343A40;
+    }
+
+    .underline>a:active {
+      text-decoration: none;
     }
 
     li.active {
@@ -303,15 +320,16 @@
     #Customization_34,
     #More_customizations_301,
     #Designer_442,
-    #License_450 {
+    #License_450
+     {
       display: block;
       padding-top: 48px;
       /*height: 500px;*/
     }
 
-    .doc-title {
+    /*.doc-title {
       margin-bottom: 30px;
-    }
+    }*/
 
     @media screen and (max-width: 810px) {
       #section1,
@@ -322,6 +340,7 @@
         margin-left: 150px;
       }
     }
+
   </style>
 </head>
 
@@ -390,9 +409,9 @@
           <li data-toggle="collapse" data-target="#nav-expand"><a href="#Getting_started_0">Getting Started</a></li>
           <div id="nav-expand" class="collapse">
             <span><a class="underline" href="#demo">Demo</a></span><br>
-            <span><a class="underline" href="#">Gradle dependency (jcenter)</a></span><br>
-            <span><a class="underline" href="#">Manifest settings</a></span><br>
-            <span><a class="underline" href="#">Basic WebView</a></span>
+            <span><a class="underline" href="#Gradle_Dependency_jcenter_2">Gradle dependency (jcenter)</a></span><br>
+            <span><a class="underline" href="#Manifest_Settings_12">Manifest settings</a></span><br>
+            <span><a class="underline" href="#Basic_WebView_27">Basic WebView</a></span>
           </div>
           <li><a href="#Customization_34">Customization</a></li>
           <li><a href="#More_customizations_301">More customizations</a></li>
@@ -409,11 +428,11 @@
 
 
       <!--Highlight js-->
-      <link rel="stylesheet" href="/path/to/styles/github.css">
+      <!-- <link rel="stylesheet" href="/path/to/styles/github.css">
       <script src="/path/to/highlight.pack.js"></script>
       <script>
         hljs.initHighlightingOnLoad()
-      </script>
+      </script> -->
 
       <!--SlideIn-->
       <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>

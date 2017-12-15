@@ -13,7 +13,6 @@
 
 .language-xml .hljs-keyword, .hljs-selector-tag, .hljs-subst {
   color: #333;
-  font-weight: bold
 }
 
 .language-xml .hljs-number, .hljs-literal, .hljs-variable, .hljs-template-variable, .hljs-tag .hljs-attr {
@@ -25,8 +24,7 @@
 }
 
 .language-xml .hljs-title, .hljs-section, .hljs-selector-id {
-  color: #900;
-  font-weight: bold
+  color: #37b24d;
 }
 
 .language-xml .hljs-subst {
@@ -34,12 +32,11 @@
 }
 
 .language-xml .hljs-type, .hljs-class .hljs-title {
-  color: #458;
-  font-weight: bold
+  color: #37b24d;
 }
 
 .language-xml .hljs-tag, .hljs-name, .hljs-attribute {
-  color: #000080;
+  color: #7048e8;
   font-weight: normal
 }
 
@@ -57,7 +54,6 @@
 
 .language-xml .hljs-meta {
   color: #999;
-  font-weight: bold
 }
 
 .language-xml .hljs-deletion {
@@ -73,5 +69,4 @@
 }
 
 .language-xml .hljs-strong {
-  font-weight: bold
 }
