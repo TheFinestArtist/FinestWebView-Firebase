@@ -34,3 +34,39 @@
 [info] i  hosting: Serving hosting files from: public
 [info] ✔  hosting: Local server: http://localhost:5000
 
+[debug] [2017-12-17T00:14:44.803Z] ----------------------------------------------------------------------
+[debug] [2017-12-17T00:14:44.807Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2017-12-17T00:14:44.808Z] CLI Version:   3.13.1
+[debug] [2017-12-17T00:14:44.808Z] Platform:      darwin
+[debug] [2017-12-17T00:14:44.808Z] Node Version:  v6.11.1
+[debug] [2017-12-17T00:14:44.809Z] Time:          Sun Dec 17 2017 00:14:44 GMT+0000 (GMT)
+[debug] [2017-12-17T00:14:44.809Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-12-17T00:14:44.888Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-12-17T00:14:44.889Z] > authorizing via signed-in user
+[debug] [2017-12-17T00:14:44.894Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-12-17T00:14:44.895Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/upcP3PNMvv3wftC8ix1IRaWWN91mdEQtHQQfKOd3au8',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sun Dec 17 2017 00:14:44 GMT+0000 (GMT)
+[debug] [2017-12-17T00:14:45.373Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-17T00:14:45.384Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/finestwebview  
+ Sun Dec 17 2017 00:14:45 GMT+0000 (GMT)
+[debug] [2017-12-17T00:14:48.234Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-17T00:14:48.236Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/finestwebview/tokens  
+ Sun Dec 17 2017 00:14:48 GMT+0000 (GMT)
+[debug] [2017-12-17T00:14:48.944Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/min/Documents/FinestWebView-Firebase'...
+[info] 
+[debug] [2017-12-17T00:14:48.949Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/finestwebview  
+ Sun Dec 17 2017 00:14:48 GMT+0000 (GMT)
+[debug] [2017-12-17T00:14:49.661Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-17T00:14:49.662Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/858518193081/clients/_:getWebAppConfig  
+ Sun Dec 17 2017 00:14:49 GMT+0000 (GMT)
+[debug] [2017-12-17T00:14:50.295Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+

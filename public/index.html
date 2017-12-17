@@ -5,20 +5,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FinestWebView</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   <script src="https://www.w3schools.com/lib/w3.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <link rel="stylesheet" href="/assets/css/highlight-java.css">
   <link rel="stylesheet" href="/assets/css/highlight-xml.css">
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Source+Sans+Pro:400,600|Source+Serif+Pro" rel="stylesheet">
 
   <style>
-    body {
-      overflow-x: hidden;
-    }
-
     h2 {
       color: #2D2F30;
       display: block;
@@ -39,16 +36,16 @@
       margin-top: 30px;
     }
 
+    h5 {}
+
+    h6 {}
+
     p {
       color: #7E8491;
       font: 14px/24px 'Source Sans Pro', sans-serif;
       margin-left: 5px;
       margin-bottom: 0;
     }
-    /*h5 {
-      color: #7E8491;
-      font: 14px/24px 'Inconsolata', monospace;
-    }*/
 
     code {
       background-color: #E9ECF1 !important;
@@ -166,77 +163,6 @@
     .main-nav-item {
       margin-right: 30px;
     }
-    /* Dropdown starts */
-    /* Dropdown Button */
-
-    button {
-      text-decoration: none;
-    }
-
-    .dropbtn {
-      background-color: #fff;
-      border: none;
-      border-color: red;
-      color: #7E8491;
-      cursor: pointer;
-      font-size: 16px;
-      padding: 0 0 8px 0;
-      pointer-events: none;
-    }
-    /* The container <div> - needed to position the dropdown content */
-
-    .dropdown {
-      position: relative;
-    }
-    /* Dropdown Content (Hidden by Default) */
-
-    .dropdown-content {
-      background-color: #fff;
-      border: 0;
-      border-radius: 2px;
-      display: none;
-      font-size: 16px;
-      min-width: 160px;
-      padding-bottom: 10px;
-      position: absolute;
-      z-index: 1;
-    }
-    /* Links inside the dropdown */
-
-    .dropdown-content a {
-      color: #7E8491;
-      border-radius: 2px;
-      padding: 3px;
-      text-decoration: none;
-      /* display: block; */
-    }
-
-    .dropdown-content a:hover {
-      color: #2D2F30;
-    }
-    /* Change color of dropdown links on hover */
-
-    .dropdown-content a:hover {
-      background-color: #E9ECF1
-    }
-    /* Show the dropdown menu on hover */
-
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-    /* Change the background color of the dropdown button when the dropdown content is shown */
-
-    .dropdown:hover .dropbtn {
-      color: #2D2F30;
-      font-weight: 600;
-    }
-
-    .sample_download {
-      display: block;
-      max-width: 109px;
-      margin-bottom: 5px;
-    }
-    /* dropdown ends*/
 
     .intro {
       height: 960px;
@@ -363,6 +289,23 @@
 
 
   <!--Main nav-->
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Documentation</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Download</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Sample project</a>
+        <a class="dropdown-item" href="#">Google Play</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Github</a>
+    </li>
+  </ul>
+
+  <!--
   <nav class="navbar navbar-default">
     <div>
       <ul class="nav navbar-nav navbar-right">
@@ -381,11 +324,11 @@
         </li>
       </ul>
     </div>
-  </nav>
+  </nav> -->
 
 
   <!--Intro-->
-  <div class="intro">
+  <!-- <div class="intro">
     <span class="app-title">FinestWebView</span>
     <span class="app-description">Beautiful and customisable Android Activity<br>that shows web pages within an app</span>
     <div class="row">
@@ -411,7 +354,7 @@
         <p class="feature-right scrollReveal5">Supports Right to Left</p>
       </div>
     </div>
-  </div><br>
+  </div><br> -->
 
 
   <!--Documentation-->
