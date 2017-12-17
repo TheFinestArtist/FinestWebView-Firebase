@@ -16,8 +16,6 @@
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Source+Sans+Pro:400,600|Source+Serif+Pro" rel="stylesheet">
 
   <style>
-    h1 {}
-
     h2 {
       color: #2D2F30;
       display: block;
@@ -78,7 +76,7 @@
     }
 
     a {
-      /*border-bottom: 2px solid #2D2F30 !important;*/
+      font-family: 'Source Sans Pro', sans-serif;
       color: #7E8491;
       text-decoration: none;
     }
@@ -111,7 +109,25 @@
       height: 42px;
     }
 
-    .nav-stacked>li+li {
+    .nav-link {
+      color: #2D2F30;
+      font: 16px 'Source Sans Pro', sans-serif;
+    }
+
+    .dropdown-item {
+      border-radius: 2px;
+      display: inline;
+      font-size: 14px;
+      padding: .25rem;
+      margin: 0 .75rem;
+    }
+
+    .dropdown-item:hover {
+      background-color: #E9ECF1;
+    }
+
+
+    /* .nav-stacked>li+li {
       margin-top: 0;
     }
 
@@ -164,6 +180,16 @@
 
     .main-nav-item {
       margin-right: 30px;
+    } */
+
+    .dropdown:hover>.dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu {
+      border: 0;
+      padding: 0;
+      margin: 0;
     }
 
     .intro {
@@ -291,14 +317,14 @@
 
 
   <!--Main nav-->
-  <ul class="nav nav-pills">
+  <ul class="nav justify-content-end">
     <li class="nav-item">
       <a class="nav-link active" href="#">Documentation</a>
     </li>
     <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Download</a>
+      <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Download</a>
       <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Sample project</a>
+        <a class="dropdown-item" href="#">Sample Project</a>
         <a class="dropdown-item" href="#">Google Play</a>
       </div>
     </li>
