@@ -16,6 +16,10 @@
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Source+Sans+Pro:400,600|Source+Serif+Pro" rel="stylesheet">
 
   <style>
+    body {
+      position: relative;
+    }
+
     h2 {
       color: #2D2F30;
       display: block;
@@ -130,8 +134,6 @@
     .dropdown-item:hover {
       background-color: #E9ECF1;
     }
-
-
     /* .nav-stacked>li+li {
       margin-top: 0;
     }
@@ -290,7 +292,6 @@
 
     #Getting_started_0 {
       display: block;
-      padding-top: 48px;
       /*margin-bottom: 90px;*/
     }
 
@@ -299,8 +300,7 @@
     #Designer_442,
     #License_450 {
       display: block;
-      padding-top: 48px;
-      /*height: 500px;*/
+      height: 500px;
     }
     /*.doc-title {
       margin-bottom: 30px;
@@ -318,7 +318,7 @@
   </style>
 </head>
 
-<body data-spy="scroll" data-target="#myScrollspy">
+<body data-spy="scroll" data-target="#scrollspy" data-offset="0">
 
 
   <!--Main nav-->
@@ -337,27 +337,6 @@
       <a class="nav-link" href="https://github.com/TheFinestArtist/FinestWebView-Android" target="_blank">Github</a>
     </li>
   </ul>
-
-  <!--
-  <nav class="navbar navbar-default">
-    <div>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="main-nav-item">
-          <a href="#Getting_started_0">Documentation</a>
-        </li>
-        <li class="main-nav-item dropdown">
-          <button class="dropbtn">Download</button>
-          <div class="dropdown-content">
-            <a class="sample_download" href="https://github.com/TheFinestArtist/FinestWebView-Android/blob/master/sample/sample-release.apk?raw=true">Sample project</a>
-            <a href="https://play.google.com/store/apps/details?id=com.thefinestartist.finestwebview.sample" target="_blank">Googleplay</a>
-          </div>
-        </li>
-        <li class="main-nav-item">
-          <a href="https://github.com/TheFinestArtist/FinestWebView-Android" target="_blank">Github</a>
-        </li>
-      </ul>
-    </div>
-  </nav> -->
 
 
   <!--Intro-->
@@ -390,29 +369,8 @@
   </div><br> -->
 
 
-  <!--Documentation-->
-  <div class="container" data-spy="scroll" data-target="#navbar-example">
-    <div class="row">
-
-      <!-- Side nav bootstrap v4 -->
-      <nav id="navbar-example" class="navbar navbar-light bg-light">
-        <nav class="nav nav-pills flex-column">
-          <a class="nav-link" href="#item-1">Item 1</a>
-          <nav class="nav nav-pills flex-column">
-            <a class="nav-link ml-3 my-1" href="#item-1-1">Item 1-1</a>
-            <a class="nav-link ml-3 my-1" href="#item-1-2">Item 1-2</a>
-          </nav>
-          <a class="nav-link" href="#item-2">Item2</a>
-          <a class="nav-link" href="#item-3">Item3</a>
-          <nav class="nav nav-pills flex-column">
-            <a class="nav-link ml-3 my-1" href="#item-3-1">Item 3-1</a>
-            <a class="nav-link ml-3 my-1" href="#item-3-2">Item 3-2</a>
-          </nav>
-        </nav>
-      </nav>
-
-      <!-- Side nav -->
-      <!-- <nav class="col-sm-3" id="myScrollspy">
+  <!-- Side nav -->
+  <!-- <nav class="col-sm-3" id="myScrollspy">
         <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="1002">
           <li data-toggle="collapse" data-target="#nav-expand"><a href="#Getting_started_0">Getting Started</a></li>
           <div id="nav-expand" class="collapse">
@@ -442,45 +400,72 @@
       </nav> -->
 
 
+  <!--Documentation-->
+  <div class="container">
+    <div class="row">
+
+      <!-- Side nav bootstrap v4 -->
+
+        <nav id="scrollspy" class="navbar navbar-light bg-light">
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link" href="#Getting_started_0">Getting Started</a>
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link ml-3 my-1" href="#item-1-1">Gradle Dependency (jcenter)</a>
+              <a class="nav-link ml-3 my-1" href="#item-1-2">Item 1-2</a>
+            </nav>
+            <a class="nav-link" href="#item-2">Item2</a>
+            <a class="nav-link" href="#item-3">Item3</a>
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link ml-3 my-1" href="#item-3-1">Item 3-1</a>
+              <a class="nav-link ml-3 my-1" href="#item-3-2">Item 3-2</a>
+            </nav>
+          </nav>
+        </nav>
+
+
+
       <!-- Documentation contents -->
-      <div class="col-sm-9">
+      <div class="col-9">
         <div w3-include-html="documentation.html"></div>
       </div>
+    </div>
+  </div>
 
 
-      <!--SlideIn-->
-      <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-      <script>
-        window.sr = ScrollReveal({
-          reset: true,
-          origin: 'left',
-          delay: '0',
-        });
-        sr.reveal('.scrollReveal1');
-        sr.reveal('.scrollReveal2', {
-          delay: 200
-        });
-        sr.reveal('.scrollReveal3', {
-          delay: 400
-        });
-        sr.reveal('.scrollReveal4', {
-          delay: 600
-        });
-        sr.reveal('.scrollReveal5', {
-          delay: 800
-        });
-      </script>
 
-      <script>
-        w3.includeHTML();
-      </script>
+  <!--SlideIn-->
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script>
+    window.sr = ScrollReveal({
+      reset: true,
+      origin: 'left',
+      delay: '0',
+    });
+    sr.reveal('.scrollReveal1');
+    sr.reveal('.scrollReveal2', {
+      delay: 200
+    });
+    sr.reveal('.scrollReveal3', {
+      delay: 400
+    });
+    sr.reveal('.scrollReveal4', {
+      delay: 600
+    });
+    sr.reveal('.scrollReveal5', {
+      delay: 800
+    });
+  </script>
 
-      <!-- Scrollspy -->
-      <script>
-        $('.container').scrollspy({
-          target: '#navbar-example'
-        })
-      </script>
+  <script>
+    w3.includeHTML();
+  </script>
+
+  <!-- Scrollspy -->
+  <script>
+    $('body').scrollspy({
+      target: '#scrollspy'
+    })
+  </script>
 </body>
 
 </html>
