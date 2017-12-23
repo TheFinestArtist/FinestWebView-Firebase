@@ -1,55 +1,48 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><title>Untitled Document.md</title><script type="text/javascript">
-//<![CDATA[
-window.__cfRocketOptions = {byc:0,p:0,petok:"a6c369f9a76b8eddfca5487b4b2a12b613063af1-1512256529-1800"};
-//]]>
-</script>
-<script type="text/javascript" src="https://ajax.cloudflare.com/cdn-cgi/scripts/ddc5a536/cloudflare-static/rocket.min.js"></script>
-<style></style></head><body id="preview">
-<h2><a id="Getting_started_0"></a>Getting started</h2>
-<h4><a id="Gradle_Dependency_jcenter_2"></a>Gradle Dependency (jcenter)</h4>
+<h2><a id="Getting_started_46"></a>Getting started</h2>
+<h4><a id="Gradle_Dependency_jcenter_48"></a>Gradle Dependency (jcenter)</h4>
 <p>Easily reference the library in your Android projects using this dependency in your module’s <code>build.gradle</code> file.</p>
 <pre><code class="language-java">dependencies {
     compile <span class="hljs-string">'com.thefinestartist:finestwebview:1.2.7'</span>
 }
 </code></pre>
-<h4><a id="Manifest_Settings_12"></a>Manifest Settings</h4>
+<h4><a id="Manifest_Settings_58"></a>Manifest Settings</h4>
 <p>FinestWebView is basically and Android activity with webview, toolbar and etc.<br>
 You have to add FinestWebViewActivity in your <code>AndroidManifest.xml</code></p>
-<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-title">uses-permission</span> <span class="hljs-attribute">android:name</span>=<span class="hljs-value">"android.permission.INTERNET"</span> /&gt;</span>
+<pre><code class="language-xml">&lt;uses-permission android:name=<span class="hljs-string">"android.permission.INTERNET"</span> /&gt;
 
-<span class="hljs-tag">&lt;<span class="hljs-title">activity</span>
-    <span class="hljs-attribute">android:name</span>=<span class="hljs-value">"com.thefinestartist.finestwebview.FinestWebViewActivity"</span>
-    <span class="hljs-attribute">android:configChanges</span>=<span class="hljs-value">"keyboardHidden|orientation|screenSize"</span>
-    <span class="hljs-attribute">android:screenOrientation</span>=<span class="hljs-value">"sensor"</span>
-    <span class="hljs-attribute">android:theme</span>=<span class="hljs-value">"@style/FinestWebViewTheme.Light"</span> /&gt;</span>
+&lt;activity
+    android:name=<span class="hljs-string">"com.thefinestartist.finestwebview.FinestWebViewActivity"</span>
+    android:configChanges=<span class="hljs-string">"keyboardHidden|orientation|screenSize"</span>
+    android:screenOrientation=<span class="hljs-string">"sensor"</span>
+    android:theme=<span class="hljs-string">"@style/FinestWebViewTheme.Light"</span> /&gt;
 </code></pre>
-<h4><a id="Basic_WebView_27"></a>Basic WebView</h4>
+<h4><a id="Basic_WebView_73"></a>Basic WebView</h4>
 <pre><code class="language-java"><span class="hljs-keyword">new</span> FinestWebView.Builder(activity).show(url);
 </code></pre>
-<h2><a id="Customization_34"></a>Customization</h2>
-<h4><a id="There_are_2_ways_to_customize_FinestWebView_36"></a>There are 2 ways to customize FinestWebView.</h4>
-<h3><a id="1_Using_Themes_38"></a>1. Using Themes</h3>
+<h2><a id="Customization_80"></a>Customization</h2>
+<h4><a id="There_are_2_ways_to_customize_FinestWebView_82"></a>There are 2 ways to customize FinestWebView.</h4>
+<h3><a id="1_Using_Themes_84"></a>1. Using Themes</h3>
 <p>You can use your own Theme for FinestWebView. If you want to use pre-defined theme, use <code>android:theme=&quot;@style/FinestWebViewTheme&quot;</code> or <code>android:theme=&quot;@style/FinestWebViewTheme.Fullscreen&quot;</code></p>
-<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-title">style</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"AppTheme.NoActionBar"</span> <span class="hljs-attribute">parent</span>=<span class="hljs-value">"Theme.AppCompat.Light.NoActionBar"</span>&gt;</span><span class="css">
-    &lt;<span class="hljs-tag">item</span> <span class="hljs-tag">name</span>="<span class="hljs-tag">colorPrimary</span>"&gt;<span class="hljs-at_rule">@<span class="hljs-keyword">color/primary&lt;/item&gt;</span>
-    &lt;item name=<span class="hljs-string">"colorPrimaryDark"</span>&gt;@color/primary_dark&lt;/item&gt;
-    &lt;item name=<span class="hljs-string">"colorAccent"</span>&gt;@color/accent&lt;/item&gt;
-    &lt;item name=<span class="hljs-string">"android:textColorPrimary"</span>&gt;@color/primary_text&lt;/item&gt;
-    &lt;item name=<span class="hljs-string">"android:textColorSecondary"</span>&gt;@color/secondary_text&lt;/item&gt;
-    &lt;item name=<span class="hljs-string">"windowActionModeOverlay"</span>&gt;true&lt;/item&gt;
-</span></span><span class="hljs-tag">&lt;/<span class="hljs-title">style</span>&gt;</span>
+<pre><code class="language-xml">&lt;style name=<span class="hljs-string">"AppTheme.NoActionBar"</span> parent=<span class="hljs-string">"Theme.AppCompat.Light.NoActionBar"</span>&gt;
+    &lt;item name=<span class="hljs-string">"colorPrimary"</span>&gt;<span class="hljs-keyword">@color</span>/primary&lt;/item&gt;
+    &lt;item name=<span class="hljs-string">"colorPrimaryDark"</span>&gt;<span class="hljs-keyword">@color</span>/primary_dark&lt;/item&gt;
+    &lt;item name=<span class="hljs-string">"colorAccent"</span>&gt;<span class="hljs-keyword">@color</span>/accent&lt;/item&gt;
+    &lt;item name=<span class="hljs-string">"android:textColorPrimary"</span>&gt;<span class="hljs-keyword">@color</span>/primary_text&lt;/item&gt;
+    &lt;item name=<span class="hljs-string">"android:textColorSecondary"</span>&gt;<span class="hljs-keyword">@color</span>/secondary_text&lt;/item&gt;
+    &lt;item name=<span class="hljs-string">"windowActionModeOverlay"</span>&gt;<span class="hljs-literal">true</span>&lt;/item&gt;
+&lt;/style&gt;
 </code></pre>
-<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-title">activity</span>
-    <span class="hljs-attribute">android:name</span>=<span class="hljs-value">"com.thefinestartist.finestwebview.FinestWebViewActivity"</span>
-    <span class="hljs-attribute">android:theme</span>=<span class="hljs-value">"@style/AppTheme.NoActionBar"</span> /&gt;</span>
+<pre><code class="language-xml">&lt;activity
+    android:name=<span class="hljs-string">"com.thefinestartist.finestwebview.FinestWebViewActivity"</span>
+    android:theme=<span class="hljs-string">"@style/AppTheme.NoActionBar"</span> /&gt;
 </code></pre>
-<h3><a id="2_Builder_Options_59"></a>2. Builder Options</h3>
-<h4>Constructors</h4>
+<h3><a id="2_Builder_Options_105"></a>2. Builder Options</h3>
+<p><strong>Constructors</strong></p>
 <pre><code class="language-java">Builder(<span class="hljs-annotation">@NonNull</span> Activity activity);
 <span class="hljs-comment">// If you use context instead of activity, FinestWebView enter animation won't work</span>
 Builder(<span class="hljs-annotation">@NonNull</span> Context context);
 </code></pre>
-<h4>Load data or Show url</h4>
+<p><strong>Load data or Show url</strong></p>
 <pre><code class="language-java">load(<span class="hljs-annotation">@StringRes</span> <span class="hljs-keyword">int</span> dataRes);
 load(String data);
 load(String data, String mimeType, String encoding);
@@ -57,27 +50,27 @@ load(String data, String mimeType, String encoding);
 show(<span class="hljs-annotation">@StringRes</span> <span class="hljs-keyword">int</span> urlRes);
 show(<span class="hljs-annotation">@NonNull</span> String url);
 </code></pre>
-<h4>WebView Listener Options</h4>
+<p><strong>WebView Listener Options</strong></p>
 <pre><code class="language-java">setWebViewListener(WebViewListener listener);
 addWebViewListener(WebViewListener listener);
 removeWebViewListener(WebViewListener listener);
 </code></pre>
-<h4>Right to Left Options</h4>
+<p><strong>Right to Left Options</strong></p>
 <pre><code class="language-java">rtl(<span class="hljs-keyword">boolean</span> rtl);
 </code></pre>
-<h4>Theme Options</h4>
+<p><strong>Theme Options</strong></p>
 <pre><code class="language-java">theme(<span class="hljs-annotation">@StyleRes</span> <span class="hljs-keyword">int</span> theme);
 </code></pre>
-<h4>StatusBar Options</h4>
+<p><strong>StatusBar Options</strong></p>
 <pre><code class="language-java">statusBarColor(<span class="hljs-annotation">@ColorInt</span> <span class="hljs-keyword">int</span> color);
 statusBarColorRes(<span class="hljs-annotation">@ColorRes</span> <span class="hljs-keyword">int</span> color);
 </code></pre>
-<h4>Toolbar Options</h4>
+<p><strong>Toolbar Options</strong></p>
 <pre><code class="language-java">toolbarColor(<span class="hljs-annotation">@ColorInt</span> <span class="hljs-keyword">int</span> color);
 toolbarColorRes(<span class="hljs-annotation">@ColorRes</span> <span class="hljs-keyword">int</span> color);
 toolbarScrollFlags(<span class="hljs-annotation">@ScrollFlags</span> <span class="hljs-keyword">int</span> flags);
 </code></pre>
-<h4>Icon Options</h4>
+<p><strong>Icon Options</strong></p>
 <pre><code class="language-java">iconDefaultColor(<span class="hljs-annotation">@ColorInt</span> <span class="hljs-keyword">int</span> color);
 iconDefaultColorRes(<span class="hljs-annotation">@ColorRes</span> <span class="hljs-keyword">int</span> color);
 iconDisabledColor(<span class="hljs-annotation">@ColorInt</span> <span class="hljs-keyword">int</span> color);
@@ -86,7 +79,7 @@ iconPressedColor(<span class="hljs-annotation">@ColorInt</span> <span class="hlj
 iconPressedColorRes(<span class="hljs-annotation">@ColorRes</span> <span class="hljs-keyword">int</span> colorRes);
 iconSelector(<span class="hljs-annotation">@DrawableRes</span> <span class="hljs-keyword">int</span> selectorRes);
 </code></pre>
-<h4>Icon Options</h4>
+<p><strong>Icon Options</strong></p>
 <pre><code class="language-java">showIconClose(<span class="hljs-keyword">boolean</span> showIconClose);
 disableIconClose(<span class="hljs-keyword">boolean</span> disableIconClose);
 showIconBack(<span class="hljs-keyword">boolean</span> showIconBack);
@@ -96,14 +89,14 @@ disableIconForward(<span class="hljs-keyword">boolean</span> disableIconForward)
 showIconMenu(<span class="hljs-keyword">boolean</span> showIconMenu);
 disableIconMenu(<span class="hljs-keyword">boolean</span> disableIconMenu);
 </code></pre>
-<h4>SwipeRefreshLayout Options</h4>
+<p><strong>SwipeRefreshLayout Options</strong></p>
 <pre><code class="language-java">showSwipeRefreshLayout(<span class="hljs-keyword">boolean</span> showSwipeRefreshLayout);
 swipeRefreshColor(<span class="hljs-annotation">@ColorInt</span> <span class="hljs-keyword">int</span> color);
 swipeRefreshColorRes(<span class="hljs-annotation">@ColorRes</span> <span class="hljs-keyword">int</span> colorRes);
 swipeRefreshColors(<span class="hljs-keyword">int</span>[] colors);
 swipeRefreshColorsRes(<span class="hljs-annotation">@ArrayRes</span> <span class="hljs-keyword">int</span> colorsRes);
 </code></pre>
-<h4>Divider Options</h4>
+<p><strong>Divider Options</strong></p>
 <pre><code class="language-java">showDivider(<span class="hljs-keyword">boolean</span> showDivider);
 gradientDivider(<span class="hljs-keyword">boolean</span> gradientDivider);
 dividerColor(<span class="hljs-annotation">@ColorInt</span> <span class="hljs-keyword">int</span> color);
@@ -112,7 +105,7 @@ dividerHeight(<span class="hljs-keyword">float</span> height);
 dividerHeight(<span class="hljs-keyword">int</span> height);
 dividerHeightRes(<span class="hljs-annotation">@DimenRes</span> <span class="hljs-keyword">int</span> height);
 </code></pre>
-<h4>ProgressBar Options</h4>
+<p><strong>ProgressBar Options</strong></p>
 <pre><code class="language-java">showProgressBar(<span class="hljs-keyword">boolean</span> showProgressBar);
 progressBarColor(<span class="hljs-annotation">@ColorInt</span> <span class="hljs-keyword">int</span> color);
 progressBarColorRes(<span class="hljs-annotation">@ColorRes</span> <span class="hljs-keyword">int</span> colorRes);
@@ -121,7 +114,7 @@ progressBarHeight(<span class="hljs-keyword">int</span> height);
 progressBarHeightRes(<span class="hljs-annotation">@DimenRes</span> <span class="hljs-keyword">int</span> height);
 progressBarPosition(<span class="hljs-annotation">@NonNull</span> Position position);
 </code></pre>
-<h4>Title Options</h4>
+<p><strong>Title Options</strong></p>
 <pre><code class="language-java">titleDefault(<span class="hljs-annotation">@NonNull</span> String title);
 titleDefaultRes(<span class="hljs-annotation">@StringRes</span> <span class="hljs-keyword">int</span> stringRes);
 updateTitleFromHtml(<span class="hljs-keyword">boolean</span> updateTitleFromHtml);
@@ -132,7 +125,7 @@ titleFont(String titleFont);
 titleColor(<span class="hljs-annotation">@ColorInt</span> <span class="hljs-keyword">int</span> color);
 titleColorRes(<span class="hljs-annotation">@ColorRes</span> <span class="hljs-keyword">int</span> colorRes);
 </code></pre>
-<h4>Url Options</h4>
+<p><strong>Url Options</strong></p>
 <pre><code class="language-java">showUrl(<span class="hljs-keyword">boolean</span> showUrl);
 urlSize(<span class="hljs-keyword">float</span> urlSize);
 urlSize(<span class="hljs-keyword">int</span> urlSize);
@@ -141,7 +134,7 @@ urlFont(String urlFont);
 urlColor(<span class="hljs-annotation">@ColorInt</span> <span class="hljs-keyword">int</span> color);
 urlColorRes(<span class="hljs-annotation">@ColorRes</span> <span class="hljs-keyword">int</span> colorRes);
 </code></pre>
-<h4>Menu Options</h4>
+<p><strong>Menu Options</strong></p>
 <pre><code class="language-java">menuColor(<span class="hljs-annotation">@ColorInt</span> <span class="hljs-keyword">int</span> color);
 menuColorRes(<span class="hljs-annotation">@ColorRes</span> <span class="hljs-keyword">int</span> colorRes);
 menuDropShadowColor(<span class="hljs-annotation">@ColorInt</span> <span class="hljs-keyword">int</span> color);
@@ -177,7 +170,7 @@ stringResCopyLink(<span class="hljs-annotation">@StringRes</span> <span class="h
 showMenuOpenWith(<span class="hljs-keyword">boolean</span> showMenuOpenWith);
 stringResOpenWith(<span class="hljs-annotation">@StringRes</span> <span class="hljs-keyword">int</span> stringResOpenWith);
 </code></pre>
-<h4>More Options</h4>
+<p><strong>More Options</strong></p>
 <pre><code class="language-java">setCustomAnimations(<span class="hljs-annotation">@AnimRes</span> <span class="hljs-keyword">int</span> animationOpenEnter,
                     <span class="hljs-annotation">@AnimRes</span> <span class="hljs-keyword">int</span> animationOpenExit,
                     <span class="hljs-annotation">@AnimRes</span> <span class="hljs-keyword">int</span> animationCloseEnter,
@@ -185,7 +178,7 @@ stringResOpenWith(<span class="hljs-annotation">@StringRes</span> <span class="h
 backPressToClose(<span class="hljs-keyword">boolean</span> backPressToClose);
 stringResCopiedToClipboard(<span class="hljs-annotation">@StringRes</span> <span class="hljs-keyword">int</span> stringResCopiedToClipboard);
 </code></pre>
-<h4>WebView Options</h4>
+<p><strong>WebView Options</strong></p>
 <pre><code class="language-java">webViewSupportZoom(<span class="hljs-keyword">boolean</span> webViewSupportZoom);
 webViewMediaPlaybackRequiresUserGesture (<span class="hljs-keyword">boolean</span> webViewMediaPlaybackRequiresUserGesture);
 webViewBuiltInZoomControls (<span class="hljs-keyword">boolean</span> webViewBuiltInZoomControls);
@@ -230,7 +223,7 @@ webViewOffscreenPreRaster (<span class="hljs-keyword">boolean</span> webViewOffs
 
 injectJavaScript(String injectJavaScript);
 </code></pre>
-<h4>Builder Pattern</h4>
+<p><strong>Builder Pattern</strong></p>
 <pre><code class="language-java"><span class="hljs-keyword">new</span> FinestWebView.Builder(activity)
     .titleDefault(<span class="hljs-string">"Default Title"</span>)
     .toolbarScrollFlags(AppBarLayout.LayoutParams.SCROLL_FLAG_SCROLL | AppBarLayout.LayoutParams.SCROLL_FLAG_ENTER_ALWAYS)
@@ -247,8 +240,8 @@ injectJavaScript(String injectJavaScript);
     .setCustomAnimations(R.anim.activity_open_enter, R.anim.activity_open_exit, R.anim.activity_close_enter, R.anim.activity_close_exit)
     .show(url);
 </code></pre>
-<h2><a id="More_customizations_301"></a>More customizations</h2>
-<h4><a id="WebView_Listeners_303"></a>WebView Listeners</h4>
+<h2><a id="More_customizations_347"></a>More customizations</h2>
+<h4><a id="WebView_Listeners_349"></a>WebView Listeners</h4>
 <p>FinestWebView has its own listeners to listen event from WebView</p>
 <pre><code class="language-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onProgressChanged</span><span class="hljs-params">(<span class="hljs-keyword">int</span> progress)</span></span>;
 <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onReceivedTitle</span><span class="hljs-params">(String title)</span></span>;
@@ -261,27 +254,27 @@ injectJavaScript(String injectJavaScript);
 
 <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onDownloadStart</span><span class="hljs-params">(String url, String userAgent, String contentDisposition, String mimeType, <span class="hljs-keyword">long</span> contentLength)</span>
 </span></code></pre>
-<h4><a id="Status_Bar_Color__Toolbar_Color_318"></a>Status Bar Color &amp; Toolbar Color</h4>
+<h4><a id="Status_Bar_Color__Toolbar_Color_364"></a>Status Bar Color &amp; Toolbar Color</h4>
 <p>Status bar color will be set as <code>colorPrimaryDark</code> of FinestWebViewActivity’s theme.<br>
 Toolbar color will be set as <code>colorPrimary</code> of FinestWebViewActivity’s theme.<br>
 But, you can override theses settings using builder option <code>statusBarColor</code>, <code>statusBarColorRes</code>, <code>toolbarColor</code>, <code>toolbarColorRes</code>.</p>
-<h4><a id="Disable_Toolbar_Collapsing_325"></a>Disable Toolbar Collapsing</h4>
+<h4><a id="Disable_Toolbar_Collapsing_371"></a>Disable Toolbar Collapsing</h4>
 <pre><code class="language-java"><span class="hljs-keyword">new</span> FinestWebView.Builder(activity)
     .toolbarScrollFlags(<span class="hljs-number">0</span>) <span class="hljs-comment">// By sending as 0, toolbar collapsing will be disabled</span>
     .show(url);
 </code></pre>
-<h4><a id="Collapsing_Toolbar_vs_WebView_BuiltInZoomControls_334"></a>Collapsing Toolbar vs WebView BuiltInZoomControls</h4>
+<h4><a id="Collapsing_Toolbar_vs_WebView_BuiltInZoomControls_380"></a>Collapsing Toolbar vs WebView BuiltInZoomControls</h4>
 <p>If you enable BuiltInZoomControls <code>webViewBuiltInZoomControls(true)</code>, it will automatically disable toolbar collapsing.</p>
-<h4><a id="Full_Screen_Mode_338"></a>Full Screen Mode</h4>
-<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-title">style</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"AppTheme.NoActionBar.FullScreen"</span> <span class="hljs-attribute">parent</span>=<span class="hljs-value">"AppTheme.NoActionBar"</span>&gt;</span><span class="css">
-    &lt;<span class="hljs-tag">item</span> <span class="hljs-tag">name</span>="<span class="hljs-tag">android</span><span class="hljs-pseudo">:windowContentOverlay"</span>&gt;<span class="hljs-at_rule">@<span class="hljs-keyword">null&lt;/item&gt;</span>
-    &lt;item name=<span class="hljs-string">"android:windowFullscreen"</span>&gt;true&lt;/item&gt;
-</span></span><span class="hljs-tag">&lt;/<span class="hljs-title">style</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">activity</span>
-    <span class="hljs-attribute">android:name</span>=<span class="hljs-value">"com.thefinestartist.finestwebview.FinestWebViewActivity"</span>
-    <span class="hljs-attribute">android:theme</span>=<span class="hljs-value">"@style/AppTheme.NoActionBar.FullScreen"</span> /&gt;</span>
+<h4><a id="Full_Screen_Mode_384"></a>Full Screen Mode</h4>
+<pre><code class="language-xml">&lt;style name=<span class="hljs-string">"AppTheme.NoActionBar.FullScreen"</span> parent=<span class="hljs-string">"AppTheme.NoActionBar"</span>&gt;
+    &lt;item name=<span class="hljs-string">"android:windowContentOverlay"</span>&gt;<span class="hljs-keyword">@null</span>&lt;/item&gt;
+    &lt;item name=<span class="hljs-string">"android:windowFullscreen"</span>&gt;<span class="hljs-literal">true</span>&lt;/item&gt;
+&lt;/style&gt;
+&lt;activity
+    android:name=<span class="hljs-string">"com.thefinestartist.finestwebview.FinestWebViewActivity"</span>
+    android:theme=<span class="hljs-string">"@style/AppTheme.NoActionBar.FullScreen"</span> /&gt;
 </code></pre>
-<h4><a id="Customizing_Animations_351"></a>Customizing Animations</h4>
+<h4><a id="Customizing_Animations_397"></a>Customizing Animations</h4>
 <p>You can use some pre-defined animations from this library or your own animations.</p>
 <pre><code class="language-java"><span class="hljs-keyword">new</span> FinestWebView.Builder(activity)
     .setCustomAnimations(R.anim.activity_open_enter, R.anim.activity_open_exit, R.anim.activity_close_enter, R.anim.activity_close_exit)
@@ -294,21 +287,21 @@ But, you can override theses settings using builder option <code>statusBarColor<
 .setCustomAnimations(R.anim.slide_left_in, R.anim.hold, R.anim.hold, R.anim.slide_right_out)
 .setCustomAnimations(R.anim.fade_in_fast, R.anim.fade_out_medium, R.anim.fade_in_medium, R.anim.fade_out_fast)
 </code></pre>
-<h4><a id="Orientation_Support_372"></a>Orientation Support</h4>
+<h4><a id="Orientation_Support_418"></a>Orientation Support</h4>
 <p>Use configChange, screenOrientation to customize your orientation options</p>
-<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-title">activity</span>
-    <span class="hljs-attribute">android:name</span>=<span class="hljs-value">"com.thefinestartist.finestwebview.FinestWebViewActivity"</span>
-    <span class="hljs-attribute">android:configChanges</span>=<span class="hljs-value">"keyboardHidden|orientation|screenSize"</span>
-    <span class="hljs-attribute">android:screenOrientation</span>=<span class="hljs-value">"sensor"</span>
-    <span class="hljs-attribute">android:theme</span>=<span class="hljs-value">"@style/FinestWebViewTheme"</span> /&gt;</span>
+<pre><code class="language-xml">&lt;activity
+    android:name=<span class="hljs-string">"com.thefinestartist.finestwebview.FinestWebViewActivity"</span>
+    android:configChanges=<span class="hljs-string">"keyboardHidden|orientation|screenSize"</span>
+    android:screenOrientation=<span class="hljs-string">"sensor"</span>
+    android:theme=<span class="hljs-string">"@style/FinestWebViewTheme"</span> /&gt;
 </code></pre>
-<h4><a id="Gradient_Divider_384"></a>Gradient Divider</h4>
+<h4><a id="Gradient_Divider_430"></a>Gradient Divider</h4>
 <p>You can make your divider gradient. If you do, webview will be under the gradient. If you disable gradient divider, webview will be below the divider.</p>
 <pre><code class="language-java"><span class="hljs-keyword">new</span> FinestWebView.Builder(activity)
     .gradientDivider(<span class="hljs-keyword">false</span>)
     .show(url);
 </code></pre>
-<h4><a id="Custom_Typeface_395"></a>Custom Typeface</h4>
+<h4><a id="Custom_Typeface_441"></a>Custom Typeface</h4>
 <p>You can use your own typeface for title, url, and menus. You have to add your font file in <code>assets/fonts</code> folder.</p>
 <pre><code class="language-java"><span class="hljs-keyword">new</span> FinestWebView.Builder(activity)
     .titleFont(<span class="hljs-string">"Roboto-Medium.ttf"</span>)
@@ -316,7 +309,7 @@ But, you can override theses settings using builder option <code>statusBarColor<
     .menuTextFont(<span class="hljs-string">"Roboto-Medium.ttf"</span>)
     .show(url);
 </code></pre>
-<h4><a id="Custom_Translation_408"></a>Custom Translation</h4>
+<h4><a id="Custom_Translation_454"></a>Custom Translation</h4>
 <p>You can use your own String resources to translate strings.</p>
 <pre><code class="language-java"><span class="hljs-keyword">new</span> FinestWebView.Builder(activity)
     .stringResCopiedToClipboard(R.string.copied_to_clipboard)
@@ -326,24 +319,26 @@ But, you can override theses settings using builder option <code>statusBarColor<
     .stringResOpenWith(R.string.open_with)
     .show(url);
 </code></pre>
-<h4><a id="Right_to_Left_422"></a>Right to Left</h4>
+<h4><a id="Right_to_Left_468"></a>Right to Left</h4>
 <p>You can support right to left by setting <code>android:supportsRtl=&quot;true&quot;</code> in <code>AndroidManifest.xml</code> or <code>rtl(true)</code>.</p>
-<pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-title">application</span>
-    <span class="hljs-attribute">...</span>
-    <span class="hljs-attribute">android:supportsRtl</span>=<span class="hljs-value">"true"</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">application</span>&gt;</span>
+<pre><code class="language-xml">&lt;application
+    ...
+    android:supportsRtl=<span class="hljs-string">"true"</span>&gt;
+&lt;/application&gt;
 </code></pre>
 <pre><code class="language-java"><span class="hljs-keyword">new</span> FinestWebView.Builder(activity)
     .rtl(<span class="hljs-keyword">true</span>)
     .show(url);
 </code></pre>
-<h4><a id="WebView_Desktop_Mode_438"></a>WebView Desktop Mode</h4>
+<h4><a id="WebView_Desktop_Mode_484"></a>WebView Desktop Mode</h4>
 <p>You can force WebView to show in desktop mode by setting <code>webViewUserAgentString(&quot;Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.4) Gecko/20100101 Firefox/4.0&quot;)</code>.</p>
-<h2><a id="Designer_442"></a>Designer</h2>
-<h4><a id="Min_Kimhttpsgithubcomopenyourboxes_444"></a><a href="https://github.com/openyourboxes">Min Kim</a></h4>
-<p>User Interface Design
-<br>Graphic Design</p>
-<h2><a id="License_450"></a>License</h2>
+<h2><a id="Designer_488"></a>Designer</h2>
+<h4><a id="Min_Kimhttpsgithubcomopenyourboxes_490"></a><a href="https://github.com/openyourboxes">Min Kim</a></h4>
+<ul>
+<li>User Interface Design</li>
+<li>Graphic Design</li>
+</ul>
+<h2><a id="License_496"></a>License</h2>
 <pre><code>The MIT License (MIT)
 
 Copyright (c) 2013 TheFinestArtist
@@ -366,5 +361,3 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 </code></pre>
-
-</body></html>
