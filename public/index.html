@@ -5,11 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FinestWebView</title>
+
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   <script src="https://www.w3schools.com/lib/w3.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <link rel="stylesheet" href="/assets/css/highlight-java.css">
   <link rel="stylesheet" href="/assets/css/highlight-xml.css">
@@ -144,8 +147,20 @@
       background-color: #E9ECF1;
     }
 
+    .home {
+      height: 100vh;
+    }
+
+    .top-nav {
+      position: absolute;
+      width: 100%;
+    }
+
     .intro {
+      position: relative;
       text-align: center;
+      top: 50%;
+      transform: translateY(-50%);
     }
 
     .app-title {
@@ -161,12 +176,8 @@
       margin-bottom: 60px;
     }
 
-    .left-col {
-      top: 140px;
-    }
-
-    .right-col {
-      top: 140px;
+    .side-col {
+      padding-top: 140px;
     }
 
     .feature-left {
@@ -248,11 +259,14 @@
 
 <body data-spy="scroll" data-target="#scrollspy" data-offset="0">
 
-  <!--Top nav-->
-  <div w3-include-html="top-nav.html"></div>
+  <!-- Home -->
+  <div class="home">
+    <!--Top nav-->
+    <div class="top-nav" w3-include-html="top-nav.html"></div>
 
-  <!--Intro-->
-  <div class="container" w3-include-html="intro.html"></div>
+    <!--Intro-->
+    <div class="container intro" w3-include-html="intro.html"></div>
+  </div>
 
   <!--Documentation-->
   <div class="container">
@@ -267,39 +281,36 @@
   </div>
 
 
-  <!--SlideIn-->
-  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-  <script>
-    window.sr = ScrollReveal({
-      reset: true,
-      origin: 'left',
-      delay: '0',
-    });
-    sr.reveal('.scrollReveal1');
-    sr.reveal('.scrollReveal2', {
-      delay: 200
-    });
-    sr.reveal('.scrollReveal3', {
-      delay: 400
-    });
-    sr.reveal('.scrollReveal4', {
-      delay: 600
-    });
-    sr.reveal('.scrollReveal5', {
-      delay: 800
-    });
-  </script>
-
   <!-- Documentation contents -->
   <script>
-    w3.includeHTML();
-  </script>
+    w3.includeHTML(onIncludeFinished);
 
-  <!-- Scrollspy -->
-  <script>
-    $('body').scrollspy({
-      target: '#scrollspy'
-    })
+    function onIncludeFinished() {
+      // SlideIn
+      window.sr = ScrollReveal({
+        reset: true,
+        origin: 'left',
+        delay: '0',
+      });
+      sr.reveal('.scrollReveal1');
+      sr.reveal('.scrollReveal2', {
+        delay: 200
+      });
+      sr.reveal('.scrollReveal3', {
+        delay: 400
+      });
+      sr.reveal('.scrollReveal4', {
+        delay: 600
+      });
+      sr.reveal('.scrollReveal5', {
+        delay: 800
+      });
+
+      // Scrollspy
+      $('body').scrollspy({
+        target: '#scrollspy'
+      })
+    };
   </script>
 </body>
 
