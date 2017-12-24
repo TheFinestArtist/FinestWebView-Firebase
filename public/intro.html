@@ -138,6 +138,73 @@
     }
   }
 </style>
+<style>
+  .app-title {
+    color: #2D2F30;
+    display: block;
+    font: 24px 'Source Sans Pro', sans-serif;
+    margin-bottom: 30px;
+  }
+
+  .app-description {
+    display: block;
+    font: 18px/24px 'Source Serif Pro', serif;
+    margin-bottom: 60px;
+  }
+
+  .side-col {
+    padding-top: 140px;
+  }
+
+  .feature-left {
+    color: #7E8491;
+    font: 16px 'Source Sans Pro', sans-serif;
+    text-align: right;
+    padding-bottom: 40px;
+  }
+
+  .feature-right {
+    color: #7E8491;
+    font: 16px 'Source Sans Pro', sans-serif;
+    text-align: left;
+    padding-bottom: 32px;
+  }
+
+  .pixeldevice {
+    background-image: url(../assets/images/googlepixel_white.png);
+    display: inline-block;
+    background-size: 302px 614px;
+    background-position: 1px 0px;
+    width: 302px;
+    height: 614px;
+    padding: 41px 0px;
+  }
+
+  .pixeldevice img {
+    width: 270px;
+    height: 478px;
+  }
+
+  #image-transition {
+    position: relative;
+  }
+
+  #image-transition img {
+    position: absolute;
+    top: 62px;
+    left: 15px;
+    opacity: 1;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+  }
+
+  #image-transition img.top:hover {
+    opacity: 0;
+  }
+</style>
 <span class="app-title">FinestWebView</span>
 <span class="app-description">Beautiful and customisable Android Activity<br>that shows web pages within an app</span>
 <div class="row">
