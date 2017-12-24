@@ -138,47 +138,50 @@
     }
   }
 
-  .fade-in-out {
-    animation: fade-in-out 10s;
-    animation: fade-in-out 10s infinite;
+  .fade-out-in-delayed {
+    animation: fade-out-in 10s;
+    animation: fade-out-in 10s infinite;
     /* Safari 4.0 - 8.0 */
-    -webkit-animation: fade-in-out 10s infinite;
+    -webkit-animation: fade-out-in 10s infinite;
+    animation-delay: 2s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 2s;
   }
 
-  @keyframes fade-in-out {
+  @keyframes fade-out-in {
     0% {
-      opacity: 0;
+      opacity: 1;
     }
     35% {
-      opacity: 0;
+      opacity: 1;
     }
     50% {
-      opacity: 1;
+      opacity: 0;
     }
     85% {
-      opacity: 1;
+      opacity: 0;
     }
     100% {
-      opacity: 0;
+      opacity: 1;
     }
   }
   /* Safari 4.0 - 8.0 */
 
-  @-webkit-keyframes fade-in-out {
+  @-webkit-keyframes fade-out-in {
     0% {
-      opacity: 0;
+      opacity: 1;
     }
     35% {
-      opacity: 0;
+      opacity: 1;
     }
     50% {
-      opacity: 1;
+      opacity: 0;
     }
     85% {
-      opacity: 1;
+      opacity: 0;
     }
     100% {
-      opacity: 0;
+      opacity: 1;
     }
   }
 </style>
@@ -247,7 +250,7 @@
   <div class="col-sm-4">
     <div class="pixeldevice">
       <img class="pixelscreen" src="/assets/images/screenshot_red.png" />
-      <img class="pixelscreen fade-in-out" src="/assets/images/screenshot_wh.png" />
+      <img class="pixelscreen fade-out-in-delayed" src="/assets/images/screenshot_wh.png" />
     </div>
   </div>
   <div class="col-sm-4 side-col fade-in">
