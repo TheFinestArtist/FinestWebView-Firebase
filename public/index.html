@@ -11,7 +11,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   <script src="https://www.w3schools.com/lib/w3.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
-  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <link rel="stylesheet" href="/assets/css/highlight-java.css">
@@ -286,26 +285,6 @@
     w3.includeHTML(onIncludeFinished);
 
     function onIncludeFinished() {
-      // SlideIn
-      window.sr = ScrollReveal({
-        reset: true,
-        origin: 'left',
-        delay: '0',
-      });
-      sr.reveal('.scrollReveal1');
-      sr.reveal('.scrollReveal2', {
-        delay: 200
-      });
-      sr.reveal('.scrollReveal3', {
-        delay: 400
-      });
-      sr.reveal('.scrollReveal4', {
-        delay: 600
-      });
-      sr.reveal('.scrollReveal5', {
-        delay: 800
-      });
-
       // Scrollspy
       $('body').scrollspy({
         target: '#scrollspy'
