@@ -137,6 +137,50 @@
       opacity: 1;
     }
   }
+
+  .fade-in-out {
+    animation: fade-in-out 10s;
+    animation: fade-in-out 10s infinite;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation: fade-in-out 10s infinite;
+  }
+
+  @keyframes fade-in-out {
+    0% {
+      opacity: 0;
+    }
+    35% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    85% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  /* Safari 4.0 - 8.0 */
+
+  @-webkit-keyframes fade-in-out {
+    0% {
+      opacity: 0;
+    }
+    35% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    85% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 </style>
 <style>
   .app-title {
@@ -178,31 +222,15 @@
     width: 302px;
     height: 614px;
     padding: 41px 0px;
-  }
-
-  .pixeldevice img {
-    width: 270px;
-    height: 478px;
-  }
-
-  #image-transition {
     position: relative;
   }
 
-  #image-transition img {
+  .pixelscreen {
+    width: 270px;
+    height: 478px;
     position: absolute;
     top: 62px;
     left: 15px;
-    opacity: 1;
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    -ms-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
-  }
-
-  #image-transition img.top:hover {
-    opacity: 0;
   }
 </style>
 <span class="app-title">FinestWebView</span>
@@ -217,9 +245,9 @@
 
   </div>
   <div class="col-sm-4">
-    <div id="image-transition" class="pixeldevice">
-      <img class="bottom pixelscreen" src="/assets/images/screenshot_wh.png" />
-      <img class="top pixelscreen" src="/assets/images/screenshot_red.png" />
+    <div class="pixeldevice">
+      <img class="pixelscreen" src="/assets/images/screenshot_red.png" />
+      <img class="pixelscreen fade-in-out" src="/assets/images/screenshot_wh.png" />
     </div>
   </div>
   <div class="col-sm-4 side-col fade-in">
