@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -119,10 +120,17 @@
       top: 0;
     }
 
-
-    .nav-link {
+    .nav-pills .nav-link {
+      border-radius: .125em;
+      padding: .063em .25rem;
       color: #2D2F30;
-      font: 16px 'Source Sans Pro', sans-serif;
+      font-weight: 600;
+    }
+
+    .nav-pills .nav-link.active {
+      background-color: #FCF119;
+      color: #2D2F30;
+      font-weight: 600;
     }
 
     .dropdown-item {
@@ -173,31 +181,32 @@
     <div class="top-nav" w3-include-html="top-nav.html"></div>
 
     <!--Intro-->
-    <div class="container intro" w3-include-html="intro.html"></div>
-  </div>
+    <!-- <div class="container intro" w3-include-html="intro.html"></div>
+  </div> -->
 
-  <!--Documentation-->
-  <div class="container">
-    <div class="row">
+    <!--Documentation-->
+    <div class="container">
+      <div class="row">
 
-      <!-- Side nav bootstrap v4 -->
-      <div class="col-3" w3-include-html="scrollspy.html"></div>
+        <!-- Side nav bootstrap v4 -->
+        <div class="col-3" w3-include-html="scrollspy.html"></div>
 
-      <!-- Documentation contents -->
-      <div class="col-9" w3-include-html="documentation.html"></div>
+        <!-- Documentation contents -->
+        <div class="col-9" w3-include-html="documentation.html"></div>
+      </div>
     </div>
-  </div>
 
-  <!-- Documentation contents -->
-  <script>
-    w3.includeHTML(onIncludeFinished);
+    <!-- Documentation contents -->
+    <script>
+      w3.includeHTML(onIncludeFinished);
 
-    function onIncludeFinished() {
-      // Scrollspy
-      $('body').scrollspy({
-        target: '#scrollspy'
-      })
-    };
-  </script>
+      function onIncludeFinished() {
+        // Scrollspy
+        $('body').scrollspy({
+          target: '#scrollspy'
+        })
+      };
+    </script>
 </body>
+
 </html>
