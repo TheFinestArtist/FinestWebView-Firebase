@@ -14,13 +14,15 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <link rel="stylesheet" href="/assets/css/highlight-java.css">
-  <link rel="stylesheet" href="/assets/css/highlight-xml.css">
+  <link rel="stylesheet" href="/assets/css/highlight-d.css">
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Source+Sans+Pro:400,600|Source+Serif+Pro" rel="stylesheet">
 
   <style>
     body {
       position: relative;
     }
+
+    h1 {}
 
     h2 {
       color: #2D2F30;
@@ -71,16 +73,6 @@
       margin-bottom: 20px;
     }
 
-    .language-xml {
-      overflow-x: scroll;
-      white-space: pre;
-    }
-
-    .language-java {
-      overflow-x: scroll;
-      white-space: pre;
-    }
-
     a {
       font-family: 'Source Sans Pro', sans-serif;
       color: #7E8491;
@@ -96,14 +88,6 @@
       text-decoration: none;
     }
 
-    .underline {
-      border-bottom: solid 2px #343A40;
-    }
-
-    .underline>a:active {
-      text-decoration: none;
-    }
-
     li.active {
       font-weight: 600;
       color: #2D2F30;
@@ -114,49 +98,9 @@
       font: 14px/24px 'Source Sans Pro', sans-serif;
     }
 
-    .navbar {
-      align-items: initial;
-      position: sticky;
-      top: 0;
-    }
-
-    .nav-pills .nav-link {
-      border-radius: .125em;
-      padding: .063em .25rem;
-      color: #2D2F30;
-      font-weight: 600;
-    }
-
-    .nav-pills .nav-link.active {
-      background-color: #FCF119;
-      color: #2D2F30;
-      font-weight: 600;
-    }
-
-    .dropdown-item {
-      border-radius: 2px;
-      display: inline;
-      font-size: 14px;
-      padding: .25rem;
-      margin: 0 .75rem;
-    }
-
-    .dropdown:hover>.dropdown-menu {
-      display: block;
-    }
-
-    .dropdown-menu {
-      border: 0;
-      padding: 0;
-      margin: 0;
-    }
-
-    .dropdown-item:hover {
-      background-color: #E9ECF1;
-    }
-
     .home {
       height: 100vh;
+      min-height: 900px;
     }
 
     .top-nav {
@@ -171,6 +115,16 @@
       top: 50%;
       transform: translateY(-50%);
     }
+
+    .language-d {
+      overflow-x: scroll;
+      white-space: pre;
+    }
+
+    .language-java {
+      overflow-x: scroll;
+      white-space: pre;
+    }
   </style>
 </head>
 
@@ -182,32 +136,32 @@
     <div class="top-nav" w3-include-html="top-nav.html"></div>
 
     <!--Intro-->
-    <!-- <div class="container intro" w3-include-html="intro.html"></div>
-  </div> -->
+    <div class="container intro" w3-include-html="intro.html"></div>
+  </div>
 
-    <!--Documentation-->
-    <div class="container">
-      <div class="row">
+  <!--Documentation-->
+  <div class="container">
+    <div class="row">
 
-        <!-- Side nav bootstrap v4 -->
-        <div class="col-3" w3-include-html="scrollspy.html"></div>
+      <!-- Side nav bootstrap v4 -->
+      <div class="col-3" w3-include-html="scrollspy.html"></div>
 
-        <!-- Documentation contents -->
-        <div class="col-9" w3-include-html="documentation.html"></div>
-      </div>
+      <!-- Documentation contents -->
+      <div class="col-9" w3-include-html="documentation.html"></div>
     </div>
+  </div>
 
-    <!-- Documentation contents -->
-    <script>
-      w3.includeHTML(onIncludeFinished);
+  <!-- Documentation contents -->
+  <script>
+    w3.includeHTML(onIncludeFinished);
 
-      function onIncludeFinished() {
-        // Scrollspy
-        $('body').scrollspy({
-          target: '#scrollspy'
-        })
-      };
-    </script>
+    function onIncludeFinished() {
+      // Scrollspy
+      $('body').scrollspy({
+        target: '#scrollspy'
+      })
+    };
+  </script>
 </body>
 
 </html>
