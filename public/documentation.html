@@ -37,12 +37,12 @@ You have to add FinestWebViewActivity in your <code>AndroidManifest.xml</code></
     android:theme=<span class="hljs-string">"@style/AppTheme.NoActionBar"</span> /&gt;
 </code></pre>
 <h3><a id="2_Builder_Options_59"></a>2. Builder Options</h3>
-<p><strong>Constructors</strong></p>
+<h4><a id="Constructors_61"></a>Constructors</h4>
 <pre><code class="language-java">Builder(<span class="hljs-annotation">@NonNull</span> Activity activity);
 <span class="hljs-comment">// If you use context instead of activity, FinestWebView enter animation won't work</span>
 Builder(<span class="hljs-annotation">@NonNull</span> Context context);
 </code></pre>
-<p><strong>Load data or Show url</strong></p>
+<h4><a id="Load_data_or_Show_url_68"></a>Load data or Show url</h4>
 <pre><code class="language-java">load(<span class="hljs-annotation">@StringRes</span> <span class="hljs-keyword">int</span> dataRes);
 load(String data);
 load(String data, String mimeType, String encoding);
@@ -50,27 +50,27 @@ load(String data, String mimeType, String encoding);
 show(<span class="hljs-annotation">@StringRes</span> <span class="hljs-keyword">int</span> urlRes);
 show(<span class="hljs-annotation">@NonNull</span> String url);
 </code></pre>
-<p><strong>WebView Listener Options</strong></p>
+<h4><a id="WebView_Listener_Options_78"></a>WebView Listener Options</h4>
 <pre><code class="language-java">setWebViewListener(WebViewListener listener);
 addWebViewListener(WebViewListener listener);
 removeWebViewListener(WebViewListener listener);
 </code></pre>
-<p><strong>Right to Left Options</strong></p>
+<h4><a id="Right_to_Left_Options_85"></a>Right to Left Options</h4>
 <pre><code class="language-java">rtl(<span class="hljs-keyword">boolean</span> rtl);
 </code></pre>
-<p><strong>Theme Options</strong></p>
+<h4><a id="Theme_Options_90"></a>Theme Options</h4>
 <pre><code class="language-java">theme(<span class="hljs-annotation">@StyleRes</span> <span class="hljs-keyword">int</span> theme);
 </code></pre>
-<p><strong>StatusBar Options</strong></p>
+<h4><a id="StatusBar_Options_95"></a>StatusBar Options</h4>
 <pre><code class="language-java">statusBarColor(<span class="hljs-annotation">@ColorInt</span> <span class="hljs-keyword">int</span> color);
 statusBarColorRes(<span class="hljs-annotation">@ColorRes</span> <span class="hljs-keyword">int</span> color);
 </code></pre>
-<p><strong>Toolbar Options</strong></p>
+<h4><a id="Toolbar_Options_101"></a>Toolbar Options</h4>
 <pre><code class="language-java">toolbarColor(<span class="hljs-annotation">@ColorInt</span> <span class="hljs-keyword">int</span> color);
 toolbarColorRes(<span class="hljs-annotation">@ColorRes</span> <span class="hljs-keyword">int</span> color);
 toolbarScrollFlags(<span class="hljs-annotation">@ScrollFlags</span> <span class="hljs-keyword">int</span> flags);
 </code></pre>
-<p><strong>Icon Options</strong></p>
+<h4><a id="Icon_Options_108"></a>Icon Options</h4>
 <pre><code class="language-java">iconDefaultColor(<span class="hljs-annotation">@ColorInt</span> <span class="hljs-keyword">int</span> color);
 iconDefaultColorRes(<span class="hljs-annotation">@ColorRes</span> <span class="hljs-keyword">int</span> color);
 iconDisabledColor(<span class="hljs-annotation">@ColorInt</span> <span class="hljs-keyword">int</span> color);
@@ -79,7 +79,7 @@ iconPressedColor(<span class="hljs-annotation">@ColorInt</span> <span class="hlj
 iconPressedColorRes(<span class="hljs-annotation">@ColorRes</span> <span class="hljs-keyword">int</span> colorRes);
 iconSelector(<span class="hljs-annotation">@DrawableRes</span> <span class="hljs-keyword">int</span> selectorRes);
 </code></pre>
-<p><strong>Icon Options</strong></p>
+<h4><a id="Icon_Options_119"></a>Icon Options</h4>
 <pre><code class="language-java">showIconClose(<span class="hljs-keyword">boolean</span> showIconClose);
 disableIconClose(<span class="hljs-keyword">boolean</span> disableIconClose);
 showIconBack(<span class="hljs-keyword">boolean</span> showIconBack);
@@ -89,14 +89,14 @@ disableIconForward(<span class="hljs-keyword">boolean</span> disableIconForward)
 showIconMenu(<span class="hljs-keyword">boolean</span> showIconMenu);
 disableIconMenu(<span class="hljs-keyword">boolean</span> disableIconMenu);
 </code></pre>
-<p><strong>SwipeRefreshLayout Options</strong></p>
+<h4><a id="SwipeRefreshLayout_Options_131"></a>SwipeRefreshLayout Options</h4>
 <pre><code class="language-java">showSwipeRefreshLayout(<span class="hljs-keyword">boolean</span> showSwipeRefreshLayout);
 swipeRefreshColor(<span class="hljs-annotation">@ColorInt</span> <span class="hljs-keyword">int</span> color);
 swipeRefreshColorRes(<span class="hljs-annotation">@ColorRes</span> <span class="hljs-keyword">int</span> colorRes);
 swipeRefreshColors(<span class="hljs-keyword">int</span>[] colors);
 swipeRefreshColorsRes(<span class="hljs-annotation">@ArrayRes</span> <span class="hljs-keyword">int</span> colorsRes);
 </code></pre>
-<p><strong>Divider Options</strong></p>
+<h4><a id="Divider_Options_140"></a>Divider Options</h4>
 <pre><code class="language-java">showDivider(<span class="hljs-keyword">boolean</span> showDivider);
 gradientDivider(<span class="hljs-keyword">boolean</span> gradientDivider);
 dividerColor(<span class="hljs-annotation">@ColorInt</span> <span class="hljs-keyword">int</span> color);
@@ -105,7 +105,7 @@ dividerHeight(<span class="hljs-keyword">float</span> height);
 dividerHeight(<span class="hljs-keyword">int</span> height);
 dividerHeightRes(<span class="hljs-annotation">@DimenRes</span> <span class="hljs-keyword">int</span> height);
 </code></pre>
-<p><strong>ProgressBar Options</strong></p>
+<h4><a id="ProgressBar_Options_151"></a>ProgressBar Options</h4>
 <pre><code class="language-java">showProgressBar(<span class="hljs-keyword">boolean</span> showProgressBar);
 progressBarColor(<span class="hljs-annotation">@ColorInt</span> <span class="hljs-keyword">int</span> color);
 progressBarColorRes(<span class="hljs-annotation">@ColorRes</span> <span class="hljs-keyword">int</span> colorRes);
@@ -114,7 +114,7 @@ progressBarHeight(<span class="hljs-keyword">int</span> height);
 progressBarHeightRes(<span class="hljs-annotation">@DimenRes</span> <span class="hljs-keyword">int</span> height);
 progressBarPosition(<span class="hljs-annotation">@NonNull</span> Position position);
 </code></pre>
-<p><strong>Title Options</strong></p>
+<h4><a id="Title_Options_162"></a>Title Options</h4>
 <pre><code class="language-java">titleDefault(<span class="hljs-annotation">@NonNull</span> String title);
 titleDefaultRes(<span class="hljs-annotation">@StringRes</span> <span class="hljs-keyword">int</span> stringRes);
 updateTitleFromHtml(<span class="hljs-keyword">boolean</span> updateTitleFromHtml);
@@ -125,7 +125,7 @@ titleFont(String titleFont);
 titleColor(<span class="hljs-annotation">@ColorInt</span> <span class="hljs-keyword">int</span> color);
 titleColorRes(<span class="hljs-annotation">@ColorRes</span> <span class="hljs-keyword">int</span> colorRes);
 </code></pre>
-<p><strong>Url Options</strong></p>
+<h4><a id="Url_Options_175"></a>Url Options</h4>
 <pre><code class="language-java">showUrl(<span class="hljs-keyword">boolean</span> showUrl);
 urlSize(<span class="hljs-keyword">float</span> urlSize);
 urlSize(<span class="hljs-keyword">int</span> urlSize);
@@ -134,7 +134,7 @@ urlFont(String urlFont);
 urlColor(<span class="hljs-annotation">@ColorInt</span> <span class="hljs-keyword">int</span> color);
 urlColorRes(<span class="hljs-annotation">@ColorRes</span> <span class="hljs-keyword">int</span> colorRes);
 </code></pre>
-<p><strong>Menu Options</strong></p>
+<h4><a id="Menu_Options_186"></a>Menu Options</h4>
 <pre><code class="language-java">menuColor(<span class="hljs-annotation">@ColorInt</span> <span class="hljs-keyword">int</span> color);
 menuColorRes(<span class="hljs-annotation">@ColorRes</span> <span class="hljs-keyword">int</span> colorRes);
 menuDropShadowColor(<span class="hljs-annotation">@ColorInt</span> <span class="hljs-keyword">int</span> color);
@@ -170,7 +170,7 @@ stringResCopyLink(<span class="hljs-annotation">@StringRes</span> <span class="h
 showMenuOpenWith(<span class="hljs-keyword">boolean</span> showMenuOpenWith);
 stringResOpenWith(<span class="hljs-annotation">@StringRes</span> <span class="hljs-keyword">int</span> stringResOpenWith);
 </code></pre>
-<p><strong>More Options</strong></p>
+<h4><a id="More_Options_224"></a>More Options</h4>
 <pre><code class="language-java">setCustomAnimations(<span class="hljs-annotation">@AnimRes</span> <span class="hljs-keyword">int</span> animationOpenEnter,
                     <span class="hljs-annotation">@AnimRes</span> <span class="hljs-keyword">int</span> animationOpenExit,
                     <span class="hljs-annotation">@AnimRes</span> <span class="hljs-keyword">int</span> animationCloseEnter,
@@ -178,7 +178,7 @@ stringResOpenWith(<span class="hljs-annotation">@StringRes</span> <span class="h
 backPressToClose(<span class="hljs-keyword">boolean</span> backPressToClose);
 stringResCopiedToClipboard(<span class="hljs-annotation">@StringRes</span> <span class="hljs-keyword">int</span> stringResCopiedToClipboard);
 </code></pre>
-<p><strong>WebView Options</strong></p>
+<h4><a id="WebView_Options_234"></a>WebView Options</h4>
 <pre><code class="language-java">webViewSupportZoom(<span class="hljs-keyword">boolean</span> webViewSupportZoom);
 webViewMediaPlaybackRequiresUserGesture (<span class="hljs-keyword">boolean</span> webViewMediaPlaybackRequiresUserGesture);
 webViewBuiltInZoomControls (<span class="hljs-keyword">boolean</span> webViewBuiltInZoomControls);
@@ -223,7 +223,7 @@ webViewOffscreenPreRaster (<span class="hljs-keyword">boolean</span> webViewOffs
 
 injectJavaScript(String injectJavaScript);
 </code></pre>
-<p><strong>Builder Pattern</strong></p>
+<h4><a id="Builder_Pattern_281"></a>Builder Pattern</h4>
 <pre><code class="language-java"><span class="hljs-keyword">new</span> FinestWebView.Builder(activity)
     .titleDefault(<span class="hljs-string">"Default Title"</span>)
     .toolbarScrollFlags(AppBarLayout.LayoutParams.SCROLL_FLAG_SCROLL | AppBarLayout.LayoutParams.SCROLL_FLAG_ENTER_ALWAYS)
