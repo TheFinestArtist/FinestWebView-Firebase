@@ -1,5 +1,172 @@
 <style>
-
+  .fade-in-000 {
+    animation: fade-in-000 1.5s;
+  }
+  @keyframes fade-in-000 {
+    from {
+      opacity: 0
+    }
+    to {
+      opacity: 1
+    }
+  }
+  @-webkit-keyframes fade-in-000 {
+    /* Safari 4.0 - 8.0 */
+    from {
+      opacity: 0
+    }
+    to {
+      opacity: 1
+    }
+  }
+  .fade-in-200 {
+    animation: fade-in-200 1.7s;
+  }
+  @keyframes fade-in-200 {
+    0% {
+      opacity: 0;
+    }
+    12% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes fade-in-200 {
+    /* Safari 4.0 - 8.0 */
+    0% {
+      opacity: 0;
+    }
+    12% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .fade-in-400 {
+    animation: fade-in-400 1.9s;
+  }
+  @keyframes fade-in-400 {
+    0% {
+      opacity: 0;
+    }
+    21% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes fade-in-400 {
+    /* Safari 4.0 - 8.0 */
+    0% {
+      opacity: 0;
+    }
+    21% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .fade-in-600 {
+    animation: fade-in-600 2.1s;
+  }
+  @keyframes fade-in-600 {
+    0% {
+      opacity: 0;
+    }
+    29% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes fade-in-600 {
+    /* Safari 4.0 - 8.0 */
+    0% {
+      opacity: 0;
+    }
+    29% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .fade-in-800 {
+    animation: fade-in-800 2.3s;
+  }
+  @keyframes fade-in-800 {
+    0% {
+      opacity: 0;
+    }
+    35% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes fade-in-800 {
+    /* Safari 4.0 - 8.0 */
+    0% {
+      opacity: 0;
+    }
+    35% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .fade-out-in-delayed {
+    animation: fade-out-in 10s;
+    animation: fade-out-in 10s infinite;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation: fade-out-in 10s infinite;
+    animation-delay: 1s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 1s;
+  }
+  @keyframes fade-out-in {
+    0% {
+      opacity: 1;
+    }
+    35% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    85% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes fade-out-in {
+    /* Safari 4.0 - 8.0 */
+    0% {
+      opacity: 1;
+    }
+    35% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    85% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 </style>
 <style>
   .app-title {
@@ -64,7 +231,7 @@
   </div>
   <div class="col-sm-4">
     <div class="galaxyDevice">
-      <img class="galaxyScreen" src="/assets/images/screenshot_wh.png" />
+      <!-- <img class="galaxyScreen" src="/assets/images/screenshot_wh.png" /> -->
       <img class="galaxyScreen fade-out-in-delayed" src="/assets/images/screenshot_red.png" />
     </div>
   </div>
