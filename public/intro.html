@@ -1,197 +1,11 @@
 <style>
-  .fade-in-000 {
-    animation: fade-in-000 1.5s;
-  }
 
-  @keyframes fade-in-000 {
-    from {
-      opacity: 0
-    }
-    to {
-      opacity: 1
-    }
-  }
-
-  @-webkit-keyframes fade-in-000 {
-    /* Safari 4.0 - 8.0 */
-    from {
-      opacity: 0
-    }
-    to {
-      opacity: 1
-    }
-  }
-
-  .fade-in-200 {
-    animation: fade-in-200 1.7s;
-  }
-
-  @keyframes fade-in-200 {
-    0% {
-      opacity: 0;
-    }
-    12% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-
-  @-webkit-keyframes fade-in-200 {
-    /* Safari 4.0 - 8.0 */
-    0% {
-      opacity: 0;
-    }
-    12% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  .fade-in-400 {
-    animation: fade-in-400 1.9s;
-  }
-
-  @keyframes fade-in-400 {
-    0% {
-      opacity: 0;
-    }
-    21% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-
-  @-webkit-keyframes fade-in-400 {
-    /* Safari 4.0 - 8.0 */
-    0% {
-      opacity: 0;
-    }
-    21% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  .fade-in-600 {
-    animation: fade-in-600 2.1s;
-  }
-
-  @keyframes fade-in-600 {
-    0% {
-      opacity: 0;
-    }
-    29% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  @-webkit-keyframes fade-in-600 {
-    /* Safari 4.0 - 8.0 */
-    0% {
-      opacity: 0;
-    }
-    29% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  .fade-in-800 {
-    animation: fade-in-800 2.3s;
-  }
-
-  @keyframes fade-in-800 {
-    0% {
-      opacity: 0;
-    }
-    35% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  @-webkit-keyframes fade-in-800 {
-    /* Safari 4.0 - 8.0 */
-    0% {
-      opacity: 0;
-    }
-    35% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  .fade-out-in-delayed {
-    animation: fade-out-in 10s;
-    animation: fade-out-in 10s infinite;
-    /* Safari 4.0 - 8.0 */
-    -webkit-animation: fade-out-in 10s infinite;
-    animation-delay: 1s;
-    /* Safari 4.0 - 8.0 */
-    -webkit-animation-delay: 1s;
-  }
-
-  @keyframes fade-out-in {
-    0% {
-      opacity: 1;
-    }
-    35% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    85% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  @-webkit-keyframes fade-out-in {
-    /* Safari 4.0 - 8.0 */
-    0% {
-      opacity: 1;
-    }
-    35% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    85% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
 </style>
 <style>
   .app-title {
     color: #2D2F30;
     display: block;
-    font: 24px 'Source Sans Pro', sans-serif;
+    font: 24px 'Source Serif Pro', serif;
     margin-bottom: 30px;
   }
 
@@ -219,23 +33,23 @@
     padding-bottom: 32px;
   }
 
-  .pixeldevice {
-    background-image: url(../assets/images/googlepixel_white.png);
+  .galaxyDevice {
+    background-image: url(../assets/images/galaxy_s8_white.png);
     display: inline-block;
-    background-size: 302px 614px;
+    background-size: 255px 539px;
     background-position: 1px 0px;
-    width: 302px;
-    height: 614px;
+    width: 255px;
+    height: 539px;
     padding: 41px 0px;
     position: relative;
   }
 
-  .pixelscreen {
-    width: 270px;
-    height: 478px;
+  .galaxyScreen {
+    width: 241px;
+    height: 493px;
     position: absolute;
-    top: 62px;
-    left: 15px;
+    top: 23px;
+    left: 8px;
   }
 </style>
 <span class="app-title">FinestWebView</span>
@@ -249,9 +63,9 @@
     <p class="feature-left fade-in-800">Custom typeface & translation</p>
   </div>
   <div class="col-sm-4">
-    <div class="pixeldevice">
-      <img class="pixelscreen" src="/assets/images/screenshot_red.png" />
-      <img class="pixelscreen fade-out-in-delayed" src="/assets/images/screenshot_wh.png" />
+    <div class="galaxyDevice">
+      <img class="galaxyScreen" src="/assets/images/screenshot_wh.png" />
+      <img class="galaxyScreen fade-out-in-delayed" src="/assets/images/screenshot_red.png" />
     </div>
   </div>
   <div class="col-sm-4 side-col fade-in">
