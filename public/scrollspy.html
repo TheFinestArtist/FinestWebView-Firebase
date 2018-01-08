@@ -2,6 +2,7 @@
   #scrollspy {
     height: 100vh;
     overflow-y: auto;
+    min-height: 1200px;
   }
 
   .navbar {
@@ -35,24 +36,15 @@
   }
 </style>
 <nav id="scrollspy" class="navbar navbar-light">
-  <nav id="accordion" class="nav nav-pills align-items-start flex-column">
-    <div class="panel">
-      <div data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+  <nav class="nav nav-pills align-items-start flex-column">
         <a class="nav-link" href="#Getting_started_0">Getting Started</a>
-      </div>
-      <div id="collapseOne" class="collapse show">
         <nav class="nav nav-pills align-items-start flex-column">
           <a class="ml-3 my-1" href="#Gradle_Dependency_jcenter_2">Gradle Dependency (jcenter)</a>
           <a class="ml-3 my-1" href="#Manifest_Settings_12">Manifest Settings</a>
           <a class="ml-3 my-1" href="#Basic_WebView_27">Basic WebView</a>
         </nav>
-      </div>
-    </div>
-    <div class="panel">
-      <div data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+
         <a class="nav-link" href="#Customization_34">Customizations</a>
-      </div>
-      <div id="collapseTwo" class="collapse">
         <nav class="nav nav-pills align-items-start flex-column">
           <a class="ml-3 my-1 subtitle" href="#1_Using_Themes_38">1. Using Themes</a>
           <a class="ml-3 my-1 subtitle" href="#2_Builder_Options_59">2. Builder Options</a>
@@ -75,13 +67,8 @@
           <a class="ml-3 my-1" href="#WebView_Options_234">WebView Options</a>
           <a class="ml-3 my-1" href="#Builder_Pattern_281">Builder Pattern</a>
         </nav>
-      </div>
-    </div>
-    <div class="panel">
-      <div data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+
         <a class="nav-link" href="#More_customizations_301">More Customizations</a>
-      </div>
-      <div id="collapseThree" class="collapse">
         <nav class="nav nav-pills align-items-start flex-column">
           <a class="ml-3 my-1" href="#WebView_Listeners_303">WebView Listeners</a>
           <a class="ml-3 my-1" href="#Status_Bar_Color__Toolbar_Color_318">Status Bar Color & Toolbar Color</a>
@@ -96,8 +83,7 @@
           <a class="ml-3 my-1" href="#Right_to_Left_422">Right to Left</a>
           <a class="ml-3 my-1" href="#WebView_Desktop_Mode_438">Webview Desktop Mode</a>
         </nav>
-      </div>
-    </div>
+
     <a class="nav-link" href="#Designer_442">Designer</a>
     <a class="nav-link" href="#License_450">Lisence</a>
   </nav>
