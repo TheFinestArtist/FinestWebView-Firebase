@@ -123,50 +123,67 @@
       opacity: 1;
     }
   }
-  .fade-out-in-delayed {
-    animation: fade-out-in 10s;
-    animation: fade-out-in 10s infinite;
-    /* Safari 4.0 - 8.0 */
-    -webkit-animation: fade-out-in 10s infinite;
-    animation-delay: 1s;
-    /* Safari 4.0 - 8.0 */
-    -webkit-animation-delay: 1s;
+
+  .fade-in-out-1 {
+    animation: fade-in-out-1 10s ease infinite;
   }
-  @keyframes fade-out-in {
-    0% {
-      opacity: 1;
-    }
-    35% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    85% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+
+  .fade-in-out-2 {
+    animation: fade-in-out-2 10s ease infinite;
   }
-  @-webkit-keyframes fade-out-in {
-    /* Safari 4.0 - 8.0 */
-    0% {
-      opacity: 1;
-    }
-    35% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    85% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+
+  .fade-in-out-3 {
+    animation: fade-in-out-3 10s ease infinite;
   }
+
+  .fade-in-out-4 {
+    animation: fade-in-out-4 10s ease infinite;
+  }
+
+  .fade-in-out-5 {
+    animation: fade-in-out-5 10s ease infinite;
+  }
+
+  @keyframes fade-in-out-1 {
+    0% { opacity: 1 }
+    1% { opacity: 1 }
+    23% {opacity: 1 }
+    25% { opacity: 0 }
+}
+
+@keyframes fade-in-out-2 {
+  0% { opacity: 0 }
+  22% { opacity: 0 }
+  24% {opacity: 1 }
+  48% { opacity: 1 }
+  50% { opacity: 0 }
+}
+
+@keyframes fade-in-out-3 {
+  0% { opacity: 0 }
+  45% { opacity: 0 }
+  48% {opacity: 1 }
+  73% { opacity: 1 }
+  75% { opacity: 0 }
+}
+
+@keyframes fade-in-out-4 {
+  0% { opacity: 0 }
+  71% { opacity: 0 }
+  74% { opacity: 1 }
+  98% { opacity: 1 }
+  100% { opacity: 0 }
+}
+
+@keyframes fade-in-out-5 {
+  0% { opacity: 0 }
+  71% { opacity: 0 }
+  74% { opacity: 0 }
+  98% { opacity: 0 }
+  100% { opacity: 1 }
+}
+
+
 </style>
 <style>
   .app-title {
@@ -231,8 +248,11 @@
   </div>
   <div class="col-sm-4">
     <div class="galaxyDevice">
-      <img class="galaxyScreen" src="/assets/images/screenshot_wh.png" />
-      <img class="galaxyScreen fade-out-in-delayed" src="/assets/images/screenshot_red.png" />
+      <img class="galaxyScreen fade-in-out-1" src="/assets/images/screenshot_wh.png" />
+      <img class="galaxyScreen fade-in-out-2" src="/assets/images/screenshot_blue.png" />
+      <img class="galaxyScreen fade-in-out-3" src="/assets/images/screenshot_bk.png" />
+      <img class="galaxyScreen fade-in-out-4" src="/assets/images/screenshot_red.png" />
+          <img class="galaxyScreen fade-in-out-5" src="/assets/images/screenshot_wh.png" />
     </div>
   </div>
   <div class="col-sm-4 side-col fade-in">
