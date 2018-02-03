@@ -138,6 +138,11 @@
     }
   }
 
+  .fade-in-out-0 {
+    animation-iteration-count: 1;
+    animation: fade-in-out-0 2s;
+  }
+
   .fade-in-out-1 {
     animation: fade-in-out-1 10s ease infinite;
   }
@@ -154,21 +159,29 @@
     animation: fade-in-out-4 10s ease infinite;
   }
 
-  .fade-in-out-5 {
-    animation: fade-in-out-5 10s ease infinite;
+  @keyframes fade-in-out-0 {
+    0% {
+      opacity: 1
+    }
+    50% {
+      opacity: 1
+    }
+    100% {
+      opacity: 0
+    }
   }
 
   @keyframes fade-in-out-1 {
     0% {
-      opacity: 1
+      opacity: 0
     }
-    1% {
-      opacity: 1
-    }
-    23% {
+    10% {
       opacity: 1
     }
     25% {
+      opacity: 1
+    }
+    35% {
       opacity: 0
     }
   }
@@ -177,16 +190,16 @@
     0% {
       opacity: 0
     }
-    22% {
+    25% {
       opacity: 0
     }
-    24% {
-      opacity: 1
-    }
-    48% {
+    35% {
       opacity: 1
     }
     50% {
+      opacity: 1
+    }
+    60% {
       opacity: 0
     }
   }
@@ -195,50 +208,32 @@
     0% {
       opacity: 0
     }
-    45% {
+    50% {
       opacity: 0
     }
-    48% {
-      opacity: 1
-    }
-    73% {
+    60% {
       opacity: 1
     }
     75% {
+      opacity: 1
+    }
+    85% {
       opacity: 0
     }
   }
 
   @keyframes fade-in-out-4 {
     0% {
-      opacity: 0
-    }
-    71% {
-      opacity: 0
-    }
-    74% {
       opacity: 1
     }
-    98% {
+    10% {
+      opacity: 0
+    }
+    75% {
+      opacity: 0
+    }
+    85% {
       opacity: 1
-    }
-    100% {
-      opacity: 0
-    }
-  }
-
-  @keyframes fade-in-out-5 {
-    0% {
-      opacity: 0
-    }
-    71% {
-      opacity: 0
-    }
-    74% {
-      opacity: 0
-    }
-    98% {
-      opacity: 0
     }
     100% {
       opacity: 1
@@ -294,6 +289,7 @@
     position: absolute;
     top: 23px;
     left: 8px;
+    opacity: 0;
   }
 </style>
 <span class="app-title">FinestWebView</span>
@@ -312,7 +308,7 @@
       <img class="galaxyScreen fade-in-out-2" src="/assets/images/screenshot_blue.png" />
       <img class="galaxyScreen fade-in-out-3" src="/assets/images/screenshot_bk.png" />
       <img class="galaxyScreen fade-in-out-4" src="/assets/images/screenshot_red.png" />
-      <img class="galaxyScreen fade-in-out-5" src="/assets/images/screenshot_wh.png" />
+      <img class="galaxyScreen fade-in-out-0" src="/assets/images/screenshot_wh.png" />
     </div>
   </div>
   <div class="col-sm-4 side-col fade-in">
