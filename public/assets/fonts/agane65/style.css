@@ -8,6 +8,6 @@
     url("./fonts/agane65.ttf") format("truetype"), /* Safari, Android, iOS */
     url("./fonts/agane65.woff") format("woff"), /* Modern Browsers */
     url("./fonts/agane65.woff2") format("woff2"); /* Modern Browsers */
-  font-weight: 600;
+  font-weight: 700;
   font-style: normal;
 }
