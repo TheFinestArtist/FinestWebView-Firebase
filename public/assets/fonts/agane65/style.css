@@ -1,0 +1,13 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "Agan65";
+  src: url("./fonts/agane65.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/agane65.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/agane65.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/agane65.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/agane65.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/agane65.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/agane65.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}

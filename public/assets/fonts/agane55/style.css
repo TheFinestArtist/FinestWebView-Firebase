@@ -1,0 +1,13 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "Aan55";
+  src: url("./fonts/agane55.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/agane55.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/agane55.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/agane55.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/agane55.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/agane55.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/agane55.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
