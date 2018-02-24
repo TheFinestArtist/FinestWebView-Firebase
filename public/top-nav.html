@@ -20,21 +20,29 @@
   .dropdown-item:hover {
     background-color: #E9ECF1;
   }
+
+  .flex-1 {
+    flex: 1;
+  }
+
+  .display-flex {
+    display: flex;
+  }
 </style>
-<nav>
-  <ul class="nav justify-content-end">
-    <a class="nav-link navbar-brand" href="#">Finest<br>Webview</a>
-    <li class="nav-item">
+<nav class="navbar flex-row">
+  <a class="nav-link navbar-brand" href="#">Finest<br>Webview</a>
+  <ul class="nav justify-content-end flex-1">
+    <li class="nav-item display-flex flex-column justify-content-center">
       <a class="nav-link active" href="#Getting_started_0">Documentation</a>
     </li>
-    <li class="nav-item dropdown">
+    <li class="nav-item display-flex flex-column justify-content-center dropdown">
       <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Download</a>
       <div class="dropdown-menu">
         <a class="dropdown-item" href="https://github.com/TheFinestArtist/FinestWebView-Android/blob/master/sample/sample-release.apk?raw=true">Sample Project</a>
         <a class="dropdown-item" href="https://play.google.com/store/apps/details?id=com.thefinestartist.finestwebview.sample" target="_blank">Google Play</a>
       </div>
     </li>
-    <li class="nav-item">
+    <li class="nav-item display-flex flex-column justify-content-center">
       <a class="nav-link" href="https://github.com/TheFinestArtist/FinestWebView-Android" target="_blank">Github</a>
     </li>
   </ul>
