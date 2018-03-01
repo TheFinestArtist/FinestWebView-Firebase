@@ -1,10 +1,11 @@
 <style>
   .dropdown-item {
     border-radius: 2px;
+    color: #7E8491;
     display: inline;
     font-size: 14px;
     padding: .25rem;
-    margin: 0 .75rem;
+    margin: .75rem;
   }
 
   .dropdown:hover>.dropdown-menu {
@@ -12,13 +13,15 @@
   }
 
   .dropdown-menu {
+    background-color: transparent;
     border: 0;
     padding: 0;
-    margin: 0;
+    margin: -9px 0 0 -1px;
   }
 
   .dropdown-item:hover {
-    background-color: #E9ECF1;
+    background-color: transparent;
+    color: #fff;
   }
 
   .flex-1 {
@@ -28,6 +31,14 @@
   .display-flex {
     display: flex;
   }
+
+  .navbar-brand {
+    color: #fff !important;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+  }
+
 </style>
 <nav class="navbar flex-row">
   <a class="nav-link navbar-brand" href="#">Finest<br>Webview</a>
