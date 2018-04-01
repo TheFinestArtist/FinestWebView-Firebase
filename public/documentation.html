@@ -1,14 +1,14 @@
 <link rel="stylesheet" href="/assets/css/tranquil-heart-custom.min.css">
 <h2><a id="Getting_started_0" href="#Getting_started_0">Getting started</a></h2>
 <h4><a id="Gradle_Dependency_jcenter_2" href="#Gradle_Dependency_jcenter_2">Gradle Dependency (jcenter)</a></h4>
-<p>Easily reference the library in your Android projects using this dependency in your module’s <code>build.gradle</code> file.</p>
+<p>Easily reference the library in your Android projects using this dependency in your module’s <code class="prettyprint">build.gradle</code> file.</p>
 <pre class="prettyprint"><code class="language-java">dependencies {
     compile <span class="hljs-string">'com.thefinestartist:finestwebview:1.2.7'</span>
 }
 </code></pre>
 <h4><a id="Manifest_Settings_12" href="#Manifest_Settings_12">Manifest Settings</a></h4>
 <p>FinestWebView is basically and Android activity with webview, toolbar and etc.<br>
-You have to add FinestWebViewActivity in your <code>AndroidManifest.xml</code></p>
+You have to add FinestWebViewActivity in your <code class="prettyprint">AndroidManifest.xml</code></p>
 <pre class="prettyprint"><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-title">uses-permission</span> <span class="hljs-attribute">android:name</span>=<span class="hljs-value">"android.permission.INTERNET"</span> /&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-title">activity</span>
@@ -23,7 +23,7 @@ You have to add FinestWebViewActivity in your <code>AndroidManifest.xml</code></
 <h2><a id="Customization_34" href="#Customization_34">Customization</a></h2>
 <h4><a id="There_are_2_ways_to_customize_FinestWebView_36" href="#There_are_2_ways_to_customize_FinestWebView_36"></a>There are 2 ways to customize FinestWebView.</h4>
 <h3><a id="Using_Themes_38" href="#Using_Themes_38">1. Using Themes</a></h3>
-<p>You can use your own Theme for FinestWebView. If you want to use pre-defined theme, use <code>android:theme=&quot;@style/FinestWebViewTheme&quot;</code> or <code>android:theme=&quot;@style/FinestWebViewTheme.Fullscreen&quot;</code></p>
+<p>You can use your own Theme for FinestWebView. If you want to use pre-defined theme, use <code class="prettyprint">android:theme=&quot;@style/FinestWebViewTheme&quot;</code> or <code class="prettyprint">android:theme=&quot;@style/FinestWebViewTheme.Fullscreen&quot;</code></p>
 <pre class="prettyprint"><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-title">style</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"AppTheme.NoActionBar"</span> <span class="hljs-attribute">parent</span>=<span class="hljs-value">"Theme.AppCompat.Light.NoActionBar"</span>&gt;</span><span class="css">
     &lt;<span class="hljs-tag">item</span> <span class="hljs-tag">name</span>="<span class="hljs-tag">colorPrimary</span>"&gt;<span class="hljs-at_rule">@<span class="hljs-keyword">color/primary&lt;/item&gt;</span>
     &lt;item name=<span class="hljs-string">"colorPrimaryDark"</span>&gt;@color/primary_dark&lt;/item&gt;
@@ -256,16 +256,16 @@ injectJavaScript(String injectJavaScript);
 <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onDownloadStart</span><span class="hljs-params">(String url, String userAgent, String contentDisposition, String mimeType, <span class="hljs-keyword">long</span> contentLength)</span>
 </span></code></pre>
 <h4><a id="Status_Bar_Color__Toolbar_Color_318" href="#Status_Bar_Color__Toolbar_Color_318">Status Bar Color &amp; Toolbar Color</a></h4>
-<p>Status bar color will be set as <code>colorPrimaryDark</code> of FinestWebViewActivity’s theme.<br>
-Toolbar color will be set as <code>colorPrimary</code> of FinestWebViewActivity’s theme.<br>
-But, you can override theses settings using builder option <code>statusBarColor</code>, <code>statusBarColorRes</code>, <code>toolbarColor</code>, <code>toolbarColorRes</code>.</p>
+<p>Status bar color will be set as <code class="prettyprint">colorPrimaryDark</code> of FinestWebViewActivity’s theme.<br>
+Toolbar color will be set as <code class="prettyprint">colorPrimary</code> of FinestWebViewActivity’s theme.<br>
+But, you can override theses settings using builder option <code class="prettyprint">statusBarColor</code>, <code class="prettyprint">statusBarColorRes</code>, <code class="prettyprint">toolbarColor</code>, <code class="prettyprint">toolbarColorRes</code>.</p>
 <h4><a id="Disable_Toolbar_Collapsing_325" href="#Disable_Toolbar_Collapsing_325">Disable Toolbar Collapsing</a></h4>
 <pre class="prettyprint"><code class="language-java"><span class="hljs-keyword">new</span> FinestWebView.Builder(activity)
     .toolbarScrollFlags(<span class="hljs-number">0</span>) <span class="hljs-comment">// By sending as 0, toolbar collapsing will be disabled</span>
     .show(url);
 </code></pre>
 <h4><a id="Collapsing_Toolbar_vs_WebView_BuiltInZoomControls_334" href="#Collapsing_Toolbar_vs_WebView_BuiltInZoomControls_334">Collapsing Toolbar vs WebView BuiltInZoomControls</a></h4>
-<p>If you enable BuiltInZoomControls <code>webViewBuiltInZoomControls(true)</code>, it will automatically disable toolbar collapsing.</p>
+<p>If you enable BuiltInZoomControls <code class="prettyprint">webViewBuiltInZoomControls(true)</code>, it will automatically disable toolbar collapsing.</p>
 <h4><a id="Full_Screen_Mode_338" href="#Full_Screen_Mode_338">Full Screen Mode</a></h4>
 <pre class="prettyprint"><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-title">style</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"AppTheme.NoActionBar.FullScreen"</span> <span class="hljs-attribute">parent</span>=<span class="hljs-value">"AppTheme.NoActionBar"</span>&gt;</span><span class="css">
     &lt;<span class="hljs-tag">item</span> <span class="hljs-tag">name</span>="<span class="hljs-tag">android</span><span class="hljs-pseudo">:windowContentOverlay"</span>&gt;<span class="hljs-at_rule">@<span class="hljs-keyword">null&lt;/item&gt;</span>
@@ -303,7 +303,7 @@ But, you can override theses settings using builder option <code>statusBarColor<
     .show(url);
 </code></pre>
 <h4><a id="Custom_Typeface_395" href="#Custom_Typeface_395">Custom Typeface</a></h4>
-<p>You can use your own typeface for title, url, and menus. You have to add your font file in <code>assets/fonts</code> folder.</p>
+<p>You can use your own typeface for title, url, and menus. You have to add your font file in <code class="prettyprint">assets/fonts</code> folder.</p>
 <pre class="prettyprint"><code class="language-java"><span class="hljs-keyword">new</span> FinestWebView.Builder(activity)
     .titleFont(<span class="hljs-string">"Roboto-Medium.ttf"</span>)
     .urlFont(<span class="hljs-string">"Roboto-Regular.ttf"</span>)
@@ -321,7 +321,7 @@ But, you can override theses settings using builder option <code>statusBarColor<
     .show(url);
 </code></pre>
 <h4><a id="Right_to_Left_422" href="#Right_to_Left_422">Right to Left</a></h4>
-<p>You can support right to left by setting <code>android:supportsRtl=&quot;true&quot;</code> in <code>AndroidManifest.xml</code> or <code>rtl(true)</code>.</p>
+<p>You can support right to left by setting <code class="prettyprint">android:supportsRtl=&quot;true&quot;</code> in <code class="prettyprint">AndroidManifest.xml</code> or <code class="prettyprint">rtl(true)</code>.</p>
 <pre class="prettyprint"><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-title">application</span>
     <span class="hljs-attribute">...</span>
     <span class="hljs-attribute">android:supportsRtl</span>=<span class="hljs-value">"true"</span>&gt;</span>
@@ -332,4 +332,4 @@ But, you can override theses settings using builder option <code>statusBarColor<
     .show(url);
 </code></pre>
 <h4><a id="WebView_Desktop_Mode_438" href="#WebView_Desktop_Mode_438">WebView Desktop Mode</a></h4>
-<p>You can force WebView to show in desktop mode by setting <code>webViewUserAgentString(&quot;Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.4) Gecko/20100101 Firefox/4.0&quot;)</code>.</p>
+<p>You can force WebView to show in desktop mode by setting <code class="prettyprint">webViewUserAgentString(&quot;Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.4) Gecko/20100101 Firefox/4.0&quot;)</code>.</p>
